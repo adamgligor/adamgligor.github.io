@@ -39,7 +39,7 @@ The added benefit is that i have my own copy of the problems I solved nicely in 
 ## What's next
 
 So far I completed all the bonfires and moving to the ziplines. Ziplines are about 10 single page applications with an estimated 300h of work.
-I also searched a bit about the part of working on real projects, i found a few testimonials regarding that, so I'm curious what will happen once you earn certiciates. 
+I also searched a bit about the part of working on real projects, i found a few testimonials regarding that, so I'm curious what will happen once you earn certifiates. 
 I'll report back with my progress. 
 
 ## Links
