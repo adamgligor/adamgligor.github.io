@@ -21,9 +21,9 @@ It is geared towards web development and javascript, you'll learn things like ht
 You'll be working most of the time in the browser whether it's course or problems. 
 This is what you'll be doing: 
 
-*Waypoints - are the learning material, organized as step by step tutorials, you are explaind the theory then asked to complete simple tasks. 
-*Ziplines - are javascript problems. you'll have to write a function that perform as described, to complete the problem the code has to pass a series of tests.
-*Bonefires - are small single page applications that have to be build from scrach, that means: html, css, javascript. Codepen.io is used as the editor and you can use any of you favorite frameworks.
+* Waypoints - are the learning material, organized as step by step tutorials, you are explaind the theory then asked to complete simple tasks. 
+* Ziplines - are javascript problems. you'll have to write a function that perform as described, to complete the problem the code has to pass a series of tests.
+* Bonefires - are small single page applications that have to be build from scrach, that means: html, css, javascript. Codepen.io is used as the editor and you can use any of you favorite frameworks.
 
 
 ## Impressions so far 
