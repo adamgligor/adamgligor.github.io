@@ -44,4 +44,5 @@ I'll report back with my progress.
 
 ## Links
 
+[freecodecamp] (http://freecodecamp.com/)
 [nodejs tools for visual studio] (https://github.com/Microsoft/nodejstools)
