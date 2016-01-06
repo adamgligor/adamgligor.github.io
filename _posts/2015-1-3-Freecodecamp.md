@@ -1,9 +1,7 @@
 ---
 layout: post
-title: You're up and running!
+title: Freecodecamp - learn to code and help non profits
 ---
-
-# Freecodecamp - learn to code and help non profits
 
 In this post i'll share my experience with freecodecamp. 
 I was looking to improve my javascript kung-fu and knowledge of trendy mv* frameworks preferably by building apps that are usefull in some way.
