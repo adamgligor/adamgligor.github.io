@@ -11,7 +11,8 @@ In this post we'll take a look at some very simple map-reduce examples with java
 ## Example 1
 
 Return the length of the longest word in the provided sentence.
-"May the force be with you" should return 5
+
+for input "May the force be with you"  return 5
 
 ```javascript
 function findLongestWord (str) {
@@ -30,7 +31,8 @@ function findLongestWord (str) {
 ## Example 2
 
 Return Largest Numbers in Arrays.
-findLargestNumbers([[13, 18, 26], [4, 5], [32,  37, 39]])  should return [26,5,39]
+
+for input [[13, 18, 26], [4, 5], [32,  37, 39]]  return [26,5,39]
 
 ```javascript
 function findLargestNumbers(arr) {
@@ -46,7 +48,8 @@ function findLargestNumbers(arr) {
 ## Example 3
 
 Repeat a string
-repeatString('*', 8) should return ********
+
+for input '*' and 8  return ********
 
 ```javascript
 function repeatString(str, num) {
