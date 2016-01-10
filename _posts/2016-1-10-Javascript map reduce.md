@@ -49,7 +49,7 @@ function findLargestNumbers(arr) {
 
 Repeat a string
 
-for input '*' and 8  return ********
+for input '\*' and 8  return ********
 
 ```javascript
 function repeatString(str, num) {
