@@ -3,9 +3,8 @@ layout: post
 title: Javascript array map and reduce functions
 ---
 
-Map and reduce are array functions are usefull for all kinds of processing.
-They are higher order function is a function whose inputs or return can be of type function. 
-In this post we'll take a look at some very simple usage examples with javascript. 
+Map and reduce are functions defined on the Array class that are usefull for all kinds of processing.
+In this post we'll provide some simple use cases. 
 
 ## Example 1
 
