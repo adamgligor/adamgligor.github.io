@@ -90,6 +90,7 @@ example. css for one row
 Check out the final result on codepen and github.
 
 [codepen link] (http://codepen.io/adamgligor/pen/rxJQoG)
+
 [github] (https://github.com/adam-gligor)
 
  
@@ -115,6 +116,8 @@ describe("can add, subtract, multiply and divide two numbers.", function () {
 ## Usefull links
 
 [css tricks - border box] (https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/)
+
 [css tricks - inline block] (https://css-tricks.com/fighting-the-space-between-inline-block-elements/)
+
 [jasmine] (http://jasmine.github.io/)
 
