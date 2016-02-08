@@ -1,10 +1,13 @@
 ---
 layout: post
-title: Javascript array map and reduce functions
+title: Freecodecamp - progress update 1
 ---
 
-Map and reduce are functions defined on the Array class that are usefull for all kinds of processing.
-In this post we'll provide some simple use cases. 
+Finished the "Basic algorithm scripting" and "Intermediate algorithm scripting" sections.
+
+I used array functions a lot: map, reduce, each, filter and so on as well as a few new tricks.
+
+Here's a teste of the exercises. The rest can be found on github.
 
 ## Example 1
 
@@ -62,8 +65,7 @@ function repeatString(str, num) {
   });  
 }
 ```
-
-Want more higher level functions? Check out the javascript array reference link below. 
+ 
 
 ## Links
 
