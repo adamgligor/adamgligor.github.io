@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Freecodecamp - progress update 1
+title: Freecodecamp progress update 1
 ---
 
 Finished the "Basic algorithm scripting" and "Intermediate algorithm scripting" sections.
@@ -65,7 +65,7 @@ function repeatString(str, num) {
   });  
 }
 ```
- 
+
 
 ## Links
 
