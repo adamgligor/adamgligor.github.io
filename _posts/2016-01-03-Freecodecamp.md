@@ -1,10 +1,14 @@
 ---
 layout: post
 title: Freecodecamp. Learn to code and help non profits
+date: '2016-01-02'
+tags: freecodecamp
 ---
 
 In this post i'll share my experience with freecodecamp.
 I was looking to improve my javascript kung-fu and knowledge of trendy mv* frameworks preferably by building apps that are usefull in some way.
+
+
 So hapened that at the time i was exploring what else has github to offer besides git repositories, I found freecodecamp in the top trending repos on github, it's actually number 3 at the moment.
 
 ## How it works

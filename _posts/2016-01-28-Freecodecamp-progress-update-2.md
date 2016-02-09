@@ -1,11 +1,14 @@
 ---
 layout: post
 title: Freecodecamp progress update 2
+date: '2016-01-28'
+tags: freecodecamp javascript
 ---
 
-Working on "Basic frontend development projects".
+Finished the "Basic frontend development projects".
 In this post I'll describe how to make a simple calculator using html css and javascript.
 All the other applications in this section are available on my github.
+
 
 ## Requirements
 

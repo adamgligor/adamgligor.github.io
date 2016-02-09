@@ -1,13 +1,15 @@
 ---
 layout: post
 title: Freecodecamp progress update 1
+date: '2016-01-10'
+tags: freecodecamp javascript
 ---
 
 Finished the "Basic algorithm scripting" and "Intermediate algorithm scripting" sections.
+Here's a teste of the exercises. All the exercises can be found on my github.
 
 I used array functions a lot: map, reduce, each, filter and so on as well as a few new tricks.
 
-Here's a teste of the exercises. The rest can be found on github.
 
 ## Example 1
 

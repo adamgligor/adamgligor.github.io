@@ -1,0 +1,20 @@
+---
+layout: page
+permalink: /archive/
+title: Archive
+---
+
+Search: <input type="search" id="archive-search">
+
+<ul class="archive-list">
+  {% for post in site.posts %}
+    <li><span>{{ post.date | date_to_string }}</span> : <a href="{{ root_url }}{{ post.url }}">{{post.title}}</a></li>
+  {% endfor %}
+</ul>
+
+<script>
+  var jets = new Jets({
+    searchTag: '#archive-search',
+    contentTag: '.archive-list'
+  });
+</script>
