@@ -71,8 +71,8 @@ function repeatString(str, num) {
 
 ## Links
 
-examples in codepen.io [link] (http://codepen.io/adamgligor/pen/BjReyo)
+examples in codepen.io [link](http://codepen.io/adamgligor/pen/BjReyo)
 
-javascript array reference [link] (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+javascript array reference [link](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
-higher order functions wiki [link] (https://en.wikipedia.org/wiki/Higher-order_function)
+higher order functions wiki [link](https://en.wikipedia.org/wiki/Higher-order_function)

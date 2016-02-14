@@ -120,8 +120,8 @@ describe("can add, subtract, multiply and divide two numbers.", function () {
 
 ## Usefull links
 
-[css tricks - border box] (https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/)
+[css tricks - border box](https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/)
 
-[css tricks - inline block] (https://css-tricks.com/fighting-the-space-between-inline-block-elements/)
+[css tricks - inline block](https://css-tricks.com/fighting-the-space-between-inline-block-elements/)
 
-[jasmine] (http://jasmine.github.io/)
+[jasmine](http://jasmine.github.io/)
