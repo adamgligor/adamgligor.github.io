@@ -5,10 +5,9 @@ date: '2016-03-06'
 tags: freecodecamp javascript
 ---
 
-## Front end developer certificate
-
 Got my front end development certificate from Freecodecamp !
 
+## Front end developer certificate
 
 ![placeholder](/public/fcc1.jpg "freecodecamp front end development certificate")
 
@@ -30,4 +29,4 @@ This is another game. It's a simulator of an electronic game popular in the 80's
 ## Usefull links
 
  - minimax algorithm [link](http://www.wisamyacteen.com/2012/11/an-artificial-intelligence-example-tic-tac-toe-using-c/)
- - somon game [link](https://en.wikipedia.org/wiki/Simon_\(game\))
+ - somon game [link](https://en.wikipedia.org/wiki/Simon_(game))
