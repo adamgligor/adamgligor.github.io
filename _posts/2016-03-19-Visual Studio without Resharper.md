@@ -30,7 +30,10 @@ Find usages of a method use **Shift + F12**, the results will be shown in a sear
 
 
 Tab pages are both good and bad. Having too many tab pages open will creates confusion, i'll go through a few ways of combating this issue in the next section, but the first thing to learn is that you have a navigation history and you can move back and forth between the places you visited. Navigate backward **Ctrl + -**, navigate forward **Ctrl + Shift + -**.
-Scenario: while editing a file, you want to lookup a method definition found in another file, press F12 opens the method in a new tab, to return press Ctrl+-, and to go back to the method definition again Ctrl+Shift+-.   
+
+Example. While editing a file, you want to lookup a method definition found in another file, press F12 opens the method in a new tab, to return press Ctrl+-, and to go back to the method definition again Ctrl+Shift+-.   
+
+
 Other basic commands related to tabs are, switching between tabs **Ctrl + Tab**, close current tab **Ctrl + F4**, and close all tabs but the current one for when you're totally lost. There is no default binding for this last one but one can be set, look for "File.CloseAllButThis" I use Ctrl+Alt+Shift+0  
 
 
@@ -52,6 +55,7 @@ Bookmarks are an alternative way of navigating between locations of interest. Th
  - Go to previous Bookmark **Ctrl+B, Ctrl+P**
  - Toggle bookmark on the current line **Ctrl+B, Ctrl+T**
  - Open bookmarks window **Ctrl+W, Ctrl+B**
+
 
 Example. You have to edit one class and want to write a unit test, place a bookmark in the test class and one bookmark in the class file being developed, cycle back an forth with bookmark shortcuts. When you're done clear out the bookmarks.
 
