@@ -5,11 +5,13 @@ date: '2016-03-19'
 tags: .net
 ---
 
+I use visual studio at my day job. Recently decided to stop using resharper and instead rely only on visual studio features. This post will be about features and keyboard shortcuts and focused towards editing and navigation.
+
 I've been using Resharper since it's early days, it's a great productivity booster but it also comes with a few annoyances. Major releases are often plagued by issues, it eats up a lot of resources and it requires a license. I decided to switch to using only the visual studio capabilities because visual studio 2015 now offers a much improved experience. I've also set myself a goal of becoming better with the keyboard and use mouse less. if you're happy with Resharper, I won't try to convince you to ditch it, you can skip the rest of the article. If you're interested what shortcuts I learned and use read on. In this guide I will focuses only on navigation and editing.  
 
 ## Level 0 - the basics
 
-Probably one of the most used features in Resharper is the context actions menu (Alt+Enter usually). Visual studio has a similar function, the default shortcut to access it  **Ctrl+.**. Different options are available based on the cursor's location. The most common ones that I've discovered:
+Probably one of the most used features in Resharper is the context actions menu (Alt+Enter usually). Visual studio has a similar function, the default shortcut to access it  **Ctrl+.** Different options are available based on the cursor's location. The most common ones that I've discovered:
 
  - inside the using statements, removes the unnecessary using statements
  - on a method or constructor, remove or re-arrange parameters
@@ -100,3 +102,9 @@ Advanced features for navigation and editing
 - Go to next error **Ctrl + Shift + F12**. Quickly cycle through build error
 - Go to highlighted references  **Ctrl+Shift+Down Arrow**. Pause on a variable name, it will get highlighted then use the shortcut to visit all usages of that variable.
 - select and edit vertically **Shift + Alt + Arrow keys**. This came as a surprise to me, you can select vertically not just horizontally.
+
+I use regularly the majority of the features described here and I can say that I'm happy with what visual studio offers. If you want to learn visual studio shortcuts I suggest to go in small bits, learn one or two practice them then a couple more and so on.
+
+## Links
+
+- TODO   
