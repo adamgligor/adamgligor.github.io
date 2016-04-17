@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Logging with Elastic search
-date: '2016-04-22'
+date: '2016-04-17'
 tags: search elastic
 ---
 
