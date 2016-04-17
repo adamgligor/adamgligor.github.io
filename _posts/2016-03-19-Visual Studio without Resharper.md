@@ -111,4 +111,4 @@ I use regularly the majority of the features described here and I can say that I
 
 ## Links
 
-- TODO   
+- list of shortcuts [link](https://gist.github.com/adam-gligor/4e2f0b8b5988622e1e5f)
