@@ -15,7 +15,7 @@ ELK stack provides a complete solution for log collection and analysis.
  - Logstash - the log collector
  - Kibana - the visualization tool
 
-![alt text](/public/file-logstash-es-kibana.png "ELK stack")
+![placeholder](/public/file-logstash-es-kibana.png "ELK stack")
 
 ## The box
 

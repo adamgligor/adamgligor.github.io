@@ -2,8 +2,8 @@
 permalink:           pretty
 
 # Setup
-title:               Adam
-tagline:             blog
+title:               Blog
+tagline:             Knowledge sharing, brain dump
 url:                 http://adam-gligor.github.io
 paginate:            5
 baseurl:             ""
