@@ -1,0 +1,15 @@
+<footer class="footer">
+  <ul>
+  {% if site.author.github %}
+    <li>
+      <a href="{{ site.author.github }}">
+        <i class="fa fa-github"></i> Github
+      </a>
+    </li>
+  {% endif %}
+
+  </ul>
+  <small>
+    &copy; <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>. All rights reserved.
+  </small>
+</footer>
