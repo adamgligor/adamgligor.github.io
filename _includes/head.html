@@ -3,11 +3,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta type="description" contant = "{{page.description}}"/>
   <title>
-    {% if page.title == "Home" %}
-      {{ site.title }} &middot; {{ site.tagline }}
-    {% else %}
-      {{ page.title }} &middot; {{ site.title }}
-    {% endif %}
+    {% raw %}
+      {% if page.title == "Home" %}
+        {{ site.title }} &middot; {{ site.tagline }}
+      {% else %}
+        {{ page.title }} &middot; {{ site.title }}
+      {% endif %}
+    {% endraw %}
   </title>
 
   <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
