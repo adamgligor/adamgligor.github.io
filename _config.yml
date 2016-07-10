@@ -2,7 +2,7 @@
 permalink:           pretty
 
 # Setup
-title:               <adam-gligor>
+title:               {adam-gligor}
 tagline:             blog, knowledge, brain dump
 url:                 http://adam-gligor.github.io
 paginate:            5
