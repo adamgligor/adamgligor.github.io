@@ -5,7 +5,7 @@ date: '2016-06-05'
 tags: ruby
 ---
 
-Simple problems require simple tools. I got the opportunity to build a small .Net web app using the less well known web framework NancyFx. Combine that with Sqlite for storage engine and Ratchet for front-end and you're in for a threat.    
+Simple problems require simple tools. I got the opportunity to build a small .Net web app using the less known web framework NancyFx. Combine that with Sqlite for storage engine and Ratchet for front-end and you're in for a threat.    
 
 ## The setup
 
@@ -38,7 +38,11 @@ NancyFx the spec sheet
 
 ### Sqlite
 
-Every app needs persistence eventually. I wanted an embedded engine that did not require separate installation and worked with entity framework. LocalDb and SqlCompact are the offerings from Microsoft but Sqlite was better suited. It's very popular in the mobile devices but not that uncommon in low traffic websites. Best part: install a nuget package, job done you have a sql engine. The less good is that the database file and schema has to be created manually as the entity framework provider does not do data migrations yet, perhaps a future version. Here's a good [podcast](https://changelog.com/201/) on Sqlite where it's author talks about the history and interesting facts.
+Every app needs persistence eventually. I wanted an embedded engine that did not require separate installation and worked with entity framework. LocalDb and SqlCompact are the offerings from Microsoft but Sqlite was better suited. It's very popular in the mobile devices but not that uncommon in low traffic websites. Best part: install a nuget package, job done you have a sql engine. The less good is that the database file and schema has to be created manually as the entity framework provider does not do data migrations yet, perhaps a future version.
+
+
+Here's a good [podcast](https://changelog.com/201/) on Sqlite where it's author talks about the history and interesting facts.
+
 
 Sqlite the spec sheet
 
@@ -88,4 +92,4 @@ A web app is a web app only when it's deployed and running on a server, this cas
 
 - nancyfx [link](http://nancyfx.org/)
 - ratchet [link](http://goratchet.com/)
-- sqlite [link] (https://www.sqlite.org/)
+- sqlite [link](https://www.sqlite.org/)
