@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Wcf soap proxy generation error
-date: '2016-09-11'
+date: '2016-09-13'
 tags: .net
 ---
 
