@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Web apps with NancyFx and Sqlite
-date: '2016-06-05'
+date: '2016-07-15'
 tags: ruby
 ---
 
