@@ -10,6 +10,7 @@ There is a limitation in the XML Schema Definition Tool (xsd.exe) that causes th
 ## The problem
 
 I encountered this issue last week while working on a project that consumes a third party soap service.  
+
 To consume soap services in c# client the common practice is to rely on framework tooling to generate service proxy classes (also known as "add service reference" from Visual Studio). Just point the XML Schema Definition Tool (xsd.exe) that is responsible for the proxy generation and the proxy will be created automatically. Once the proxy is there, it can be updated to get access to new methods and types, update is also an automated operation.
 
 In my case the code and proxy was already there, I only had to update the proxy and expose some new functionality. The issue appeared right after updating the proxy, I got this error when executing any request:
@@ -39,7 +40,7 @@ public static void Execute()
     soapEnvelopeXml.LoadXml(@"<?xml version=""1.0"" encoding=""utf-8""?>
         <soap:Envelope
           xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance""
-          xmlns:xsd=""http://www.w3.org/2001/XMLSchema"" 
+          xmlns:xsd=""http://www.w3.org/2001/XMLSchema""
           xmlns:soap=""http://schemas.xmlsoap.org/soap/envelope/"">
           <soap:Body>
             <HelloWorld xmlns=""http://tempuri.org/"" />
@@ -121,7 +122,7 @@ This approach can also serve a bit as a diagnostics tool, this is how I got the 
 
 If you own both the service and the client, the schema can be tweaked to prevent the issues with the proxy, but this scenario not likely. I've never seen such issue when both the service and client are generated with .net tools. The fix involves inserting dummy xml attributes after elements that are "unbounded".
 
-Here is the article mentioning this fix: (link)[https://social.msdn.microsoft.com/Forums/en-US/e33305c3-b5f6-4922-8a3f-df202088d25a/unable-to-generate-temporary-classes-with-biztalk2006-published-webservices?forum=asmxandxml]
+Here is the article mentioning this fix: [link](https://social.msdn.microsoft.com/Forums/en-US/e33305c3-b5f6-4922-8a3f-df202088d25a/unable-to-generate-temporary-classes-with-biztalk2006-published-webservices?forum=asmxandxml)
 
 ```
 change the following:
