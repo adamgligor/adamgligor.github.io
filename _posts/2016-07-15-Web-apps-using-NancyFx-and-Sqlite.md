@@ -2,7 +2,7 @@
 layout: post
 title: Web apps with NancyFx and Sqlite
 date: '2016-07-15'
-tags: ruby
+tags: .net
 ---
 
 Simple problems require simple tools. I got the opportunity to build a small .Net web app using the less known web framework NancyFx. Combine that with Sqlite for storage engine and Ratchet for front-end and you're in for a threat.    
