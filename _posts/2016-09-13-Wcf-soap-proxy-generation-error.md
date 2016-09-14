@@ -105,7 +105,7 @@ The code snippet is taken from stackoverflow from [this thread](http://stackover
 
 This solution could be suitable if the soap service only has a couple of types and methods, so nothing very complex.
 
-If you have generated proxies manually in the past and still remember how to do it should be an easy task, just add the right attributes to the classes and figure out a way to bolt on the soap envelope.
+If you have generated proxies manually in the past and still remember how to do it should be an easy task, just add the right attributes to the classes.
 
 I haven't used soap in a while so I resorted to the following trick. The XML Schema definition Tool (xsd.exe) also used by visual studio to generate the service proxy has a few hidden options when executed manually among these is the ability to create and XSD from an XML.
 
