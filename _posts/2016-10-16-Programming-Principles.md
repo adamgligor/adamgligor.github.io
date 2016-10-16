@@ -2,7 +2,7 @@
 layout: post
 title:  Programming principles worth knowing
 date: '2016-10-16'
-tags: .net
+tags: programming
 ---
 
 Programming principles, aren't there enough articles on the subject ? My motivation for writing this article was to round up all the priciples that I found usefull based on my personal experience, 
