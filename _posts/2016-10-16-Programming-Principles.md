@@ -73,7 +73,8 @@ List of patterns:
  - Protected variations
  - Pure fabrication
 
- Source: (wikipedia)[https://en.wikipedia.org/wiki/GRASP_(object-oriented_design)]
+
+ Source: [wikipedia](https://en.wikipedia.org/wiki/GRASP_(object-oriented_design))
 
 
 ## DRY Don't repeat yourself
