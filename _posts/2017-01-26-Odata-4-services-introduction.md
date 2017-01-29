@@ -18,27 +18,28 @@ Source: [odata.org](http://www.odata.org/)
 
 ## Prerequisites
 
-I will be creating a service for the purpuse of ilustrating basic capabilities and the implementation details.
-Topic covered: 
+For the purpuse of ilustrating basic capabilities of an odata service and some of the the implementation details, I created a demo project. the complet source code can be foind on github, see references section.
+
+The data model is very simple and consists of two entities **categories**, and **products**, with one to many relationship between them.
+
+Category: Id, Name, Products
+
+Product: Id, Name, Price, Cateogory
+
+The example code will cover the following topics: 
 
  - Basic crud operations
  - Navigation and entity references
  - Queries 
 
-The sample code was built in visual studio 2015 with .net 4.6.2, and odata 4, web api 2.2, entity framework 6 and sql local db for presistance.
+The code was built with: visual studio 2015, .net 4.6.2, and odata 4, web api 2.2, entity framework 6 and sql local db.
+
+
+## Initial setup and gotchas
 
 Get the sample code  
 Install odata nuget packages, .. gotchas
 Install and configure entity framework 6  beyond scope
-
-
-## The data model
-
-Starting off with the model, two entities: **categories**, and **products** with one to many relationship between them.
-
-Category: Id, Name, Products
-
-Product: Id, Name, Price, Cateogory
 
 
 ## Odata Edm model 
@@ -80,7 +81,7 @@ Mapping of http actions to the controller routes :
 | GET         | Get entity by key        | /Categories({key}) |
 | POST        | Create an entity         | /Categories        |
 | PUT         | Update an entity         | /Categories({key}) |
-| PATCH       | Update (delta) an entity | /Categories({key}) |
+| PATCH       | Patch an entity          | /Categories({key}) |
 | DELETE      | Delete an entity         | /Categories({key}) |
 
 ## Basic crud operations
@@ -94,6 +95,8 @@ Rundown for implementing crud operations:
 - Return an action result, preferably using one of the existing helper methods.
 
 ### Implement get entity set
+
+Sample code to list all entities of a kind: 
 
 ```c#
     [ODataRoutePrefix("Categories")]
@@ -110,7 +113,15 @@ Rundown for implementing crud operations:
         }
 ```
 
-### Implement get all 
+Http request example: 
+
+- headers 
+- url 
+- body 
+
+### Implement get by key 
+
+Sample code to lookup an entity by key:
 
 ```c#
     [ODataRoute("({key})")]
@@ -128,6 +139,8 @@ Rundown for implementing crud operations:
 
 ### Implement create entity
 
+Sample code to create an entity:
+
 ```c#
     [ODataRoute()]
     [HttpPost]
@@ -144,6 +157,8 @@ Rundown for implementing crud operations:
 ```
 
 ### Implement update entity 
+
+Sample code to update an entity:
 
 ```c#
     [ODataRoute("({key})")]
@@ -166,7 +181,10 @@ Rundown for implementing crud operations:
 Remark: The id supplied in the query is leading, that's why it's overriting the id that might be supplied in the request body. 
 
 
-### Implement delta update entity 
+### Implement patch update entity 
+
+
+Sample code to partially update an entity (patch):
 
 ```c#
     [ODataRoute("({key})")]
@@ -189,6 +207,8 @@ Remark: the difference between update and patch is that update replaces the comp
 
 ### Implement delete
 
+Sample code to delete an entity:  
+
 ```c#
     [ODataRoute("({key})")]
     [HttpDelete]
@@ -207,15 +227,102 @@ Remark: the difference between update and patch is that update replaces the comp
     }
 ```
 
+Remark: Setting foreign keys to null is not implemented in this version.
+
 ## Navigation and entity references
 
+Navigating from categories to products. Access products belonging to a category when the category key is known. Url example: GET /Category(1)/Products
+
+Code sample:
+
+```c#
+    [ODataRoute("({key})/Products")]
+    [HttpGet]
+    public IHttpActionResult GetCategoryProducts([FromODataUri] int key)
+    {
+        var dbCategory = dbContext.Categories.Include("Products").SingleOrDefault(c => c.Id == key);
+
+        if (dbCategory == null)
+            return NotFound();
+
+        return Ok(dbCategory.Products);
+    }
+```
+
+And the reverse from products to category. Access the category of a product when the product key is known. Url example: /Products(1)/Category  
+
+Code sample: 
+
+```c#
+    [ODataRoute("({key})/Category")]
+    [HttpGet]
+    public IHttpActionResult GetCategory([FromODataUri] int key)
+    {
+        var dbProduct = dbContext.Products.Include("Category").SingleOrDefault(c => c.Id == key);
+
+        if (dbProduct == null)
+            return NotFound();
+
+        return Ok(dbProduct.Category);
+    }
+```
+
 ## Queries 
+
+The following query capabilities are supported by odata: 
+
+| keyword      | function                 
+| ------------ |-----------------------------------------------------------------------------------|
+| $expand      | Expands related entities inline.                                                  |
+| $filter      | Filters the results, based on a Boolean condition.                                |
+| $count       | Tells the server to include the total count of matching entities in the response. |
+| $orderby     | Sorts the results.                                                                |
+| $select      | Selects which properties to include in the response.                              |
+| $skip        | Skips the first n results.                                                        |
+| $top         | Returns only the first n the results.                                             |
+
+
+Fist the query capabilities have to be enabled in the edm. 
+TODO: how to globally enable them
+
+```c#
+    private static IEdmModel GetEdmModel()
+    {
+       ...
+        builder.EntitySet<Category>("Categories").EntityType
+            .HasKey(e => e.Id).Select().Filter().Expand().OrderBy().Count(); 
+       ...
+    }
+```
+
+Then the get actions have to adjusted to support queries.
+
+ - Add the *EnableQuery* attribute
+ - Pass the query down to the database
+
+```c#
+    [EnableQuery()]
+    [ODataRoute()]
+    [HttpGet]
+    public IHttpActionResult Get(ODataQueryOptions<Category> options)
+    {
+        ODataQuerySettings settings = new ODataQuerySettings() { PageSize = 10 };
+        IQueryable dbCategories = options.ApplyTo(dbContext.Categories, settings);
+        return Ok(dbCategories);
+    }
+```
 
 
 ## Testing
 
+Postman , sample test http request provided.
 
 ## References
 
+Github examples 
+Postman collection to test the urls 
 Source: [wikipedia](https://en.wikipedia.org/wiki/Inversion_of_control)
+
+
+http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part2-url-conventions.html
 
