@@ -6,7 +6,7 @@ tags: odata
 ---
 
 
-Geting started with OData 4 services. Here's a quick guide to geting started ... 
+Geting started with OData 4 services ? I switched to a new project in the beginning of this year so I had to pick up a bit of odata knowledge. I'll cover the basics in the following articles. 
 
 ## What is odata
 
@@ -18,7 +18,7 @@ Source: [odata.org](http://www.odata.org/)
 
 ## Prerequisites
 
-For the purpuse of ilustrating basic capabilities of an odata service and some of the the implementation details, I created a demo project. the complet source code can be foind on github, see references section.
+For the purpuse of ilustrating basic capabilities of an odata service and some of the implementation details, I created a demo project. The complet source code can be found on github, see references section.
 
 The data model is very simple and consists of two entities **categories**, and **products**, with one to many relationship between them.
 
@@ -34,12 +34,17 @@ The example code will cover the following topics:
 
 The code was built with: visual studio 2015, .net 4.6.2, and odata 4, web api 2.2, entity framework 6 and sql local db.
 
-
 ## Initial setup and gotchas
 
-Get the sample code  
-Install odata nuget packages, .. gotchas
-Install and configure entity framework 6  beyond scope
+To start with odata 4 service creation install the  Microsoft.AspNet.Odata nuget package. 
+
+There is one gotcha I encountered with this, after pulling in all the dependencis the solution would not compile. The error message said something like: 
+
+*Error:  Multiple assemblies with equivalent identity have been imported: ... remove one of the duplicate references*
+
+The fix for me was updating all packages to the lastest version.
+
+For data persistency, install and configure entity framework 6, this is beyond the scope of this article.
 
 
 ## Odata Edm model 
@@ -282,8 +287,7 @@ The following query capabilities are supported by odata:
 | $top         | Returns only the first n the results.                                             |
 
 
-Fist the query capabilities have to be enabled in the edm. 
-TODO: how to globally enable them
+Fist the query capabilities have to be enabled in the edm. Could not find a global switch for that so I will do it individually on an entity level. Here's how to enable various query capabilities: 
 
 ```c#
     private static IEdmModel GetEdmModel()
@@ -312,17 +316,13 @@ Then the get actions have to adjusted to support queries.
     }
 ```
 
-
 ## Testing
 
-Postman , sample test http request provided.
+[Postman](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en) is a good tool for testing a rest api.
 
 ## References
 
-Github examples 
-Postman collection to test the urls 
-Source: [wikipedia](https://en.wikipedia.org/wiki/Inversion_of_control)
-
-
-http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part2-url-conventions.html
+- Github source code [link](https://github.com/adam-gligor/OdData4Sample)
+- The Odata standard [link](http://docs.oasis-open.org)
+- Postman collection to test the urls (to folllow ...) 
 
