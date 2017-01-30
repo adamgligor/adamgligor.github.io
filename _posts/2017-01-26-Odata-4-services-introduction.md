@@ -170,7 +170,8 @@ Sample code to update an entity:
     [HttpPut]
     public IHttpActionResult UpdateCategory([FromODataUri] int key, Category category)
     {
-        var dbCategory = dbContext.Categories.SingleOrDefault(c => c.Id == key);
+        var dbCategory = dbContext.Categories
+            .SingleOrDefault(c => c.Id == key);
 
         if (dbCategory == null)
             return NotFound();
@@ -196,7 +197,8 @@ Sample code to partially update an entity (patch):
     [HttpPatch]
     public IHttpActionResult UpdateDeltaCategory([FromODataUri] int key, Delta<Category> patch)
     {
-        var dbCategory = dbContext.Categories.SingleOrDefault(c => c.Id == key);
+        var dbCategory = dbContext.Categories
+            .SingleOrDefault(c => c.Id == key);
 
         if (dbCategory == null)
             return NotFound();
@@ -219,7 +221,8 @@ Sample code to delete an entity:
     [HttpDelete]
     public IHttpActionResult Delete([FromODataUri] int key)
     {
-        var dbCategory = dbContext.Categories.Include("Products").SingleOrDefault(c => c.Id == key);
+        var dbCategory = dbContext.Categories.Include("Products")
+            .SingleOrDefault(c => c.Id == key);
 
         if (dbCategory == null)
             return NotFound();
@@ -245,7 +248,8 @@ Code sample:
     [HttpGet]
     public IHttpActionResult GetCategoryProducts([FromODataUri] int key)
     {
-        var dbCategory = dbContext.Categories.Include("Products").SingleOrDefault(c => c.Id == key);
+        var dbCategory = dbContext.Categories.Include("Products")
+            .SingleOrDefault(c => c.Id == key);
 
         if (dbCategory == null)
             return NotFound();
@@ -263,7 +267,8 @@ Code sample:
     [HttpGet]
     public IHttpActionResult GetCategory([FromODataUri] int key)
     {
-        var dbProduct = dbContext.Products.Include("Category").SingleOrDefault(c => c.Id == key);
+        var dbProduct = dbContext.Products.Include("Category")
+            .SingleOrDefault(c => c.Id == key);
 
         if (dbProduct == null)
             return NotFound();
