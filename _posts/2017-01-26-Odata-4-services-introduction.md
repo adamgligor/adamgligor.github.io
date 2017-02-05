@@ -10,6 +10,8 @@ Geting started with OData 4 services ? I switched to a new project in the beginn
 
 ## What is odata
 
+**Update** 2017-02-05 - Added powershell command examples for invoking the endpoints  
+
 OData (Open Data Protocol) is an OASIS standard that defines a set of best practices for building and consuming RESTful APIs. 
 OData helps you focus on your business logic while building RESTful APIs without having to worry about the various approaches to define request and response headers, status codes, HTTP methods, URL conventions, media types, payload formats, query options, etc. 
 OData also provides guidance for tracking changes, defining functions/actions for reusable procedures, and sending asynchronous/batch requests.
@@ -55,21 +57,21 @@ The edm is defined using code and there is a helper class to do that *ODataConve
 Here's a snippet to define our two entites.
 
 ```c#
-    public static void Register(HttpConfiguration config)
-    {
-        ...
-        config.MapODataServiceRoute("OdataRoute", "odata", GetEdmModel());
-    }
+public static void Register(HttpConfiguration config)
+{
     ...
-    private static IEdmModel GetEdmModel()
-    {
-        var builder = new ODataConventionModelBuilder();
-        builder.Namespace = "sample";
-        builder.ContainerName = "SampleContainer";
-        builder.EntitySet<Category>("Categories");
-        builder.EntitySet<Product>("Products");
-        return builder.GetEdmModel();
-    }
+    config.MapODataServiceRoute("OdataRoute", "odata", GetEdmModel());
+}
+...
+private static IEdmModel GetEdmModel()
+{
+    var builder = new ODataConventionModelBuilder();
+    builder.Namespace = "sample";
+    builder.ContainerName = "SampleContainer";
+    builder.EntitySet<Category>("Categories");
+    builder.EntitySet<Product>("Products");
+    return builder.GetEdmModel();
+}
 ```
 
 ## Routing and conventions 
@@ -104,42 +106,48 @@ Rundown for implementing crud operations:
 Sample code to list all entities of a kind: 
 
 ```c#
-    [ODataRoutePrefix("Categories")]
-    public class CategoriesController : ODataController
-    {
-        ProductsDbContext dbContext = new ProductsDbContext();
-        ...
+[ODataRoutePrefix("Categories")]
+public class CategoriesController : ODataController
+{
+    ProductsDbContext dbContext = new ProductsDbContext();
+    ...
 
-        [ODataRoute()]
-        [HttpGet]
-        public IHttpActionResult Get()
-        {
-            return Ok(dbContext.Categories);
-        }
+    [ODataRoute()]
+    [HttpGet]
+    public IHttpActionResult Get()
+    {
+        return Ok(dbContext.Categories);
+    }
 ```
 
-Http request example: 
+Invoke from powershell:
 
-- headers 
-- url 
-- body 
+```powershell
+Invoke-WebRequest -URI http://localhost:61162/odata/Categories -Method Get 
+```
 
 ### Implement get by key 
 
 Sample code to lookup an entity by key:
 
 ```c#
-    [ODataRoute("({key})")]
-    [HttpGet]
-    public IHttpActionResult Get([FromODataUri] int key)
-    {
-        var dbCategory = dbContext.Categories.SingleOrDefault(c => c.Id == key);
+[ODataRoute("({key})")]
+[HttpGet]
+public IHttpActionResult Get([FromODataUri] int key)
+{
+    var dbCategory = dbContext.Categories.SingleOrDefault(c => c.Id == key);
 
-        if (dbCategory == null)
-            return NotFound();
+    if (dbCategory == null)
+        return NotFound();
 
-        return Ok(dbCategory);
-    }
+    return Ok(dbCategory);
+}
+```
+
+Invoke from powershell:
+
+```powershell
+Invoke-WebRequest -URI 'http://localhost:61162/odata/Categories(1)' -Method Get 
 ```
 
 ### Implement create entity
@@ -147,18 +155,25 @@ Sample code to lookup an entity by key:
 Sample code to create an entity:
 
 ```c#
-    [ODataRoute()]
-    [HttpPost]
-    public IHttpActionResult AddCategory(Category category)
-    {
-        if (!ModelState.IsValid)
-            return BadRequest(ModelState);
+[ODataRoute()]
+[HttpPost]
+public IHttpActionResult AddCategory(Category category)
+{
+    if (!ModelState.IsValid)
+        return BadRequest(ModelState);
 
-        dbContext.Categories.Add(category);
-        dbContext.SaveChanges();
+    dbContext.Categories.Add(category);
+    dbContext.SaveChanges();
 
-        return Created(category);
-    }
+    return Created(category);
+}
+```
+
+Invoke from powershell:
+
+```powershell
+$body = @{ Name ='NewCategory'} | ConvertTo-Json
+Invoke-WebRequest -URI "http://localhost:61162/odata/Categories" -Method Post -ContentType "application/json" -Body $body
 ```
 
 ### Implement update entity 
@@ -166,26 +181,32 @@ Sample code to create an entity:
 Sample code to update an entity:
 
 ```c#
-    [ODataRoute("({key})")]
-    [HttpPut]
-    public IHttpActionResult UpdateCategory([FromODataUri] int key, Category category)
-    {
-        var dbCategory = dbContext.Categories
-            .SingleOrDefault(c => c.Id == key);
+[ODataRoute("({key})")]
+[HttpPut]
+public IHttpActionResult UpdateCategory([FromODataUri] int key, Category category)
+{
+    var dbCategory = dbContext.Categories
+        .SingleOrDefault(c => c.Id == key);
 
-        if (dbCategory == null)
-            return NotFound();
+    if (dbCategory == null)
+        return NotFound();
 
-        category.Id = key;
-        dbContext.Entry(dbCategory).CurrentValues.SetValues(category);
-        dbContext.SaveChanges();
+    category.Id = key;
+    dbContext.Entry(dbCategory).CurrentValues.SetValues(category);
+    dbContext.SaveChanges();
 
-        return StatusCode(System.Net.HttpStatusCode.NoContent);
-    }
+    return StatusCode(System.Net.HttpStatusCode.NoContent);
+}
 ```
 
 Remark: The id supplied in the query is leading, that's why it's overriting the id that might be supplied in the request body. 
 
+Invoke from powershell:
+
+```powershell
+$body = @{ Name ='NewCategory'} | ConvertTo-Json
+Invoke-WebRequest -URI "http://localhost:61162/odata/Categories(1)" -Method Put -ContentType "application/json" -Body $body
+```
 
 ### Implement patch update entity 
 
@@ -193,49 +214,62 @@ Remark: The id supplied in the query is leading, that's why it's overriting the 
 Sample code to partially update an entity (patch):
 
 ```c#
-    [ODataRoute("({key})")]
-    [HttpPatch]
-    public IHttpActionResult UpdateDeltaCategory([FromODataUri] int key, Delta<Category> patch)
-    {
-        var dbCategory = dbContext.Categories
-            .SingleOrDefault(c => c.Id == key);
+[ODataRoute("({key})")]
+[HttpPatch]
+public IHttpActionResult UpdateDeltaCategory([FromODataUri] int key, Delta<Category> patch)
+{
+    var dbCategory = dbContext.Categories
+        .SingleOrDefault(c => c.Id == key);
 
-        if (dbCategory == null)
-            return NotFound();
+    if (dbCategory == null)
+        return NotFound();
 
-        patch.Patch(dbCategory);
-        dbContext.SaveChanges();
+    patch.Patch(dbCategory);
+    dbContext.SaveChanges();
 
-        return StatusCode(System.Net.HttpStatusCode.NoContent);
-    }
+    return StatusCode(System.Net.HttpStatusCode.NoContent);
+}
 ```
 
 Remark: the difference between update and patch is that update replaces the complete entity while patch updates only some of properties.
+
+Invoke from powershell:
+
+```powershell
+$body = @{ Name ='NewCategory'} | ConvertTo-Json
+Invoke-WebRequest -URI "http://localhost:61162/odata/Categories(1)" -Method Patch -ContentType "application/json" -Body $body
+```
 
 ### Implement delete
 
 Sample code to delete an entity:  
 
 ```c#
-    [ODataRoute("({key})")]
-    [HttpDelete]
-    public IHttpActionResult Delete([FromODataUri] int key)
-    {
-        var dbCategory = dbContext.Categories.Include("Products")
-            .SingleOrDefault(c => c.Id == key);
+[ODataRoute("({key})")]
+[HttpDelete]
+public IHttpActionResult Delete([FromODataUri] int key)
+{
+    var dbCategory = dbContext.Categories.Include("Products")
+        .SingleOrDefault(c => c.Id == key);
 
-        if (dbCategory == null)
-            return NotFound();
+    if (dbCategory == null)
+        return NotFound();
 
-        //TODO: remove foreign key relationships
-        dbContext.Categories.Remove(dbCategory);
-        dbContext.SaveChanges();
+    //TODO: remove foreign key relationships
+    dbContext.Categories.Remove(dbCategory);
+    dbContext.SaveChanges();
 
-        return StatusCode(System.Net.HttpStatusCode.NoContent);
-    }
+    return StatusCode(System.Net.HttpStatusCode.NoContent);
+}
 ```
 
 Remark: Setting foreign keys to null is not implemented in this version.
+
+Invoke from powershell:
+
+```powershell
+Invoke-WebRequest -URI "http://localhost:61162/odata/Categories(1)" -Method Delete
+```
 
 ## Navigation and entity references
 
@@ -244,18 +278,24 @@ Navigating from categories to products. Access products belonging to a category 
 Code sample:
 
 ```c#
-    [ODataRoute("({key})/Products")]
-    [HttpGet]
-    public IHttpActionResult GetCategoryProducts([FromODataUri] int key)
-    {
-        var dbCategory = dbContext.Categories.Include("Products")
-            .SingleOrDefault(c => c.Id == key);
+[ODataRoute("({key})/Products")]
+[HttpGet]
+public IHttpActionResult GetCategoryProducts([FromODataUri] int key)
+{
+    var dbCategory = dbContext.Categories.Include("Products")
+        .SingleOrDefault(c => c.Id == key);
 
-        if (dbCategory == null)
-            return NotFound();
+    if (dbCategory == null)
+        return NotFound();
 
-        return Ok(dbCategory.Products);
-    }
+    return Ok(dbCategory.Products);
+}
+```
+
+Invoke from powershell:
+
+```powershell
+Invoke-WebRequest -URI "http://localhost:61162/odata/Categories(1)/Products" -Method Get 
 ```
 
 And the reverse from products to category. Access the category of a product when the product key is known. Url example: /Products(1)/Category  
@@ -263,18 +303,24 @@ And the reverse from products to category. Access the category of a product when
 Code sample: 
 
 ```c#
-    [ODataRoute("({key})/Category")]
-    [HttpGet]
-    public IHttpActionResult GetCategory([FromODataUri] int key)
-    {
-        var dbProduct = dbContext.Products.Include("Category")
-            .SingleOrDefault(c => c.Id == key);
+[ODataRoute("({key})/Category")]
+[HttpGet]
+public IHttpActionResult GetCategory([FromODataUri] int key)
+{
+    var dbProduct = dbContext.Products.Include("Category")
+        .SingleOrDefault(c => c.Id == key);
 
-        if (dbProduct == null)
-            return NotFound();
+    if (dbProduct == null)
+        return NotFound();
 
-        return Ok(dbProduct.Category);
-    }
+    return Ok(dbProduct.Category);
+}
+```
+
+Invoke from powershell:
+
+```powershell
+Invoke-WebRequest -URI "http://localhost:61162/odata/Products(1)/Category" -Method Get 
 ```
 
 ## Queries 
@@ -295,39 +341,42 @@ The following query capabilities are supported by odata:
 Fist the query capabilities have to be enabled in the edm. Could not find a global switch for that so I will do it individually on an entity level. Here's how to enable various query capabilities: 
 
 ```c#
-    private static IEdmModel GetEdmModel()
-    {
-       ...
-        builder.EntitySet<Category>("Categories").EntityType
-            .HasKey(e => e.Id).Select().Filter().Expand().OrderBy().Count(); 
-       ...
-    }
+private static IEdmModel GetEdmModel()
+{
+    ...
+    builder.EntitySet<Category>("Categories").EntityType
+        .HasKey(e => e.Id).Select().Filter().Expand().OrderBy().Page().Count(); 
+    ...
+}
 ```
 
-Then the get actions have to adjusted to support queries.
+Then the get all actions have to adjusted to support queries. Add the *EnableQuery* attribute for that.
 
- - Add the *EnableQuery* attribute
- - Pass the query down to the database
 
 ```c#
-    [EnableQuery()]
-    [ODataRoute()]
-    [HttpGet]
-    public IHttpActionResult Get(ODataQueryOptions<Category> options)
-    {
-        ODataQuerySettings settings = new ODataQuerySettings() { PageSize = 10 };
-        IQueryable dbCategories = options.ApplyTo(dbContext.Categories, settings);
-        return Ok(dbCategories);
-    }
+[EnableQuery()]
+[ODataRoute()]
+[HttpGet]
+public IHttpActionResult Get(ODataQueryOptions<Category> options)
+{
+    return Ok(dbContext.Categories);
+}
+```
+
+Remark: the query options will be passed down to to the sql server
+
+Invoke from powershell:
+
+```powershell
+Invoke-WebRequest -URI "http://localhost:61162/odata/Categories?$filter=Name eq 'Goods'&$select=Name&$top=1&$skip=1&$expand=Products" -Method Get 
 ```
 
 ## Testing
 
-[Postman](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en) is a good tool for testing a rest api.
+For testing the endpoints I use powershell or [postman](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en) is a good tool for testing a rest api.
 
 ## References
 
 - Github source code [link](https://github.com/adam-gligor/OdData4Sample)
 - The Odata standard [link](http://docs.oasis-open.org)
-- Postman collection to test the urls (to folllow ...) 
-
+- Documentation on using on odata4 with web api [link](http://odata.github.io/WebApi)
