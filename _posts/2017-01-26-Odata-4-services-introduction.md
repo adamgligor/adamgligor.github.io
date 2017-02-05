@@ -373,7 +373,7 @@ Invoke-WebRequest -URI "http://localhost:61162/odata/Categories?$filter=Name eq 
 
 ## Testing
 
-For testing the endpoints I use powershell or [postman](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en) is a good tool for testing a rest api.
+For testing the endpoints I use powershell or [postman](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en).
 
 ## References
 

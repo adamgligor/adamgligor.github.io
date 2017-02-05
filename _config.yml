@@ -8,6 +8,7 @@ url:                 http://adam-gligor.github.io
 paginate:            5
 baseurl:             ""
 markdown:            kramdown
+analytics_id:        UA-91417859-1
 
 # Assets
 #
