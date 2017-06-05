@@ -18,7 +18,7 @@ Typlical power consumption with wifi on is in the range of a few hundred milliam
 
 Deep sleep power consumption is in the range of a few hundred microamps.
 
-## Prototype #1. Bare bone esp running on AA or NIMH
+## Prototype #1. Esp running on AA or NIMH
 
 First attempt was to power the esp with AA or NIMH batteries. Since there are a lot of references on using a pair of AA alcaline batteries I gave this a try.
 
@@ -29,7 +29,7 @@ Next option was to use more batteries and and use a voltage converter buck or bo
 Not enough power manifest itseft as random resets, communication failure or failure to properly boot.
 
 
-## Prototype #2. Bare bone esp runnig on Lipo 
+## Prototype #2. Esp runnig on Lipo 
 
 After more research I found lithium batteries as the next option. Lithium batheries come in different flavors and size and have the ability to deliver high currents, but pose new challanges for safe long term usage.
 
@@ -87,7 +87,7 @@ So for my setup I plan to read the sensors once every hour, and between the samp
  - 300 ma is the normal operation current
  - I'll wait maximum 10 seconds to connect to the wifi read the sensors and send the data (typically takes 5 seconds)
 
-Then under ideal conditions the power consumption for one cycle (sleep + wake) is: (10sec x 300mA + 3590sec x 0.2mA) / 3600 ~= 0.83mA 
+Then under ideal conditions the power consumption for one cycle (sleep + wake) is: (10sec x 300mA + 3590sec x 0.2mA) / 3600sec ~= 0.83mA 
 
 Thus a 2500mAh battery should last: 2500 / (0.83 x 24) ~= 120 days
 
