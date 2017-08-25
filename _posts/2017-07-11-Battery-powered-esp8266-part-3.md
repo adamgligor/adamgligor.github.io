@@ -14,7 +14,7 @@ This is part 3 of the series dedicated to learning about esp8266 building a wifi
 
 Wifi thermometer:
 
-    - Measures temperature 
+    - Measures temperature (uses ds18b20 sensor)
     - Runs on battery and has decent autonomy 
     - Collects data and stores it in the cloud 
     - Web application to plot the temperature readings 
