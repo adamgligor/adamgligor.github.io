@@ -9,6 +9,9 @@ tags: iot
 I wanted a thermometer to measure the temperature outside that would store the collected data and did not require drilling holes and runing wires through the house. No being able to find anything at the local shops to satisfy me I set out to build one myself. This will be a post on esp8266 and how to run it on a lithium battery ...
 
 
+**UPDATE 2017-08-25** Linked to nodemcu doc page for flashing the device
+
+
 ## Esp what ?
 
 
@@ -87,8 +90,8 @@ Start learning about nodemcu [here](http://nodemcu.readthedocs.io/en/master/). D
 
 Before writing the first program in nodemcu/lua the following need to happen: 
 
-- Install *nodemcu flasher*, this will flash the device with the nodemcu firmware
-- Install a tool for uploading code: *espexplorer* ide or *nodemcu-uploader.py*
+- Install a flasher *PyFlasher* or *nodemcu flasher*, this will flash the device with the nodemcu firmware, check this [link](https://nodemcu.readthedocs.io/en/latest/en/flash/) for latest developments regarding flashing
+- Install a tool for uploading code: *esp explorer* ide or *nodemcu-uploader.py*
 
 the basic of all these are covered in the nodemcu documentation.
 
