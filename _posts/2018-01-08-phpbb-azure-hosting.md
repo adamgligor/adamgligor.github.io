@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Phpp hosting in Azure
-date: '2010-01-08'
+date: '2018-01-08'
 tags: azure
 ---
 
