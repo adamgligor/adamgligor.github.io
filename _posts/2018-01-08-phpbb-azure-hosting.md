@@ -9,10 +9,10 @@ tags: azure
 Free hosting for **phpbb** forum ? Try microsoft azure with in app mysql server.
 
 
-Up to 10 apps can be hosted for free in the free tier plan. Whith the recenlty infroduced `mysql-in-app` feature, a mysql database can be hosted alongside a web app. For details head [here](https://blogs.msdn.microsoft.com/appserviceteam/2017/03/06/announcing-general-availability-for-mysql-in-app/)
+Up to 10 apps can be hosted for free in the free tier plan. With the recenlty introduced `mysql-in-app` feature, a mysql database can be hosted alongside a web app. For details head [here](https://blogs.msdn.microsoft.com/appserviceteam/2017/03/06/announcing-general-availability-for-mysql-in-app/)
 
 
-This opens the possibility to host apps that require a database for free. On such app is the php based `phpbb` forum.
+This opens the possibility to host for free apps that require a database. One such app is the php based `phpbb` forum.
 
 
 ## Web app setup
@@ -88,7 +88,7 @@ I ran into an issue that the login on the forum did not work. To fix that I had 
 
 ## Conclusion
 
-Definitely not production grade hosting, but for small scale installation or development it is usable. Best part it's absolutely free. 
+Definitely not production grade hosting, but for small scale installation or development it is usable. Best part, it's absolutely free. 
 
 
 
