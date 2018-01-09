@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Phpp hosting in Azure
+title: Phpbb hosting in Azure
 date: '2018-01-08'
 tags: azure
 ---
