@@ -5,17 +5,17 @@ date: '2018-04-04'
 tags: PowerShell
 ---
 
+A PowerShell script executed by SQL server using `xp_cmdshell` to return a numeric value. 
 
-# PowerShell tip - exit code
 
-A PowerShell script executed by SQL server using `xp_cmdshell` returns usually a table value. 
+A PowerShell script executed by SQL server using `xp_cmdshell` returns usually a table so one has to assign the result to a table variable, then query that. 
 
-Suppose that the script is doing some kind of validation and only the outcome (as in true/false) is of interest, using exit codes it is possible to have the result straight as an int in SQL server. Here's how ...
+Suppose that the script is doing some kind of validation and only the outcome (as in true/false) is of interest. Using exit codes it is possible to have the result straight as an int variable in SQL server and not deal with tables. Here's how ...
 
 
 ## The problem
 
-The original version of the script is this: 
+The original version of the script was this: 
 
 ```powershell
 validate.ps1 
@@ -34,7 +34,7 @@ catch [System.Xml.Schema.XmlSchemaValidationException]
 }
 ```
 
-Executing this script from SQL server
+The fragment that executes it from SQL server
 
 ```sql 
 
@@ -55,12 +55,12 @@ Result will be a table:
 
 ## Solution 
 
-Returning only exit code from a script it is possible to have the result straight as an int in SQL server.
+To have the result straight as an int when executed SQL server one has to return only exit codes from the script
 
 Read on exit codes [here](https://weblogs.asp.net/soever/returning-an-exit-code-from-a-powershell-script)
 
 
-Updated script
+So with this update the new script is:
 
 
 ```powershell
@@ -80,9 +80,8 @@ catch [System.Xml.Schema.XmlSchemaValidationException]
 EXIT $validationError
 ```
 
-Result will be a single value, assignable to int:
+And the result will be a single int value:
 
 ![ps](/public/powershell/ps_sql_int.png)
-
 
 
