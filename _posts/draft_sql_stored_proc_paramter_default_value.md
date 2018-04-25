@@ -2,6 +2,9 @@
 draft: true
 ---
 
+SQL server stored procedures paramter default values, cannot supply subset of paramters ?? !!
+
+
 https://docs.microsoft.com/en-us/sql/relational-databases/stored-procedures/specify-parameters?view=sql-server-2017
 
 ```
