@@ -41,7 +41,9 @@ EXECUTE @RC = [dbo].[proc_foo]  @first ,@second -- ok, uses supplied variables
 
 
 SET @second = 'ZZZ'
-EXECUTE @RC = [dbo].[proc_foo]  @second -- not ok , dos not seem to be possible to supply sublset of paramters !
+EXECUTE @RC = [dbo].[proc_foo]  @second  @second -- not ok , dos not seem to be possible to supply sublset of paramters !
+
+EXECUTE @RC = [dbo].[proc_foo]  @second = @second -- ok this is how to 
 
 
 
