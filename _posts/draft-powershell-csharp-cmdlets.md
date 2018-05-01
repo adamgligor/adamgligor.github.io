@@ -2,32 +2,34 @@
 draft: true
 ---
 
-## General 
+Tips for creating better powershell cmdlets from c#. 
+
+
 ... 
 
-## The `-Verbose` switch
+# The `-Verbose` switch
 
 
 Write-Verbose(...) only prints when flag is set 
 
 
-## Loading and unloading a dll containging cmdlets 
-
-Use the `Import-Module`
-
-## The `-WhatIf` switch 
+# The `-WhatIf` switch 
 
 ```
 if (ShouldProcess(deletion.Topic, deletion.Action)) ...
 ```
 
 
-## Showing progress bar 
+# Showing progress bar 
 
 ```
 WriteProgress ...
 ```
 
 
-## Async? 
+
+<!-- ## Loading and unloading a dll containging cmdlets 
+
+Use the `Import-Module` -->
+
 
