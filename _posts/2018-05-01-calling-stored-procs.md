@@ -39,7 +39,7 @@ EXECUTE @RC = [dbo].[proc_foo]  @first, @second
 
 then my instinct was to init the variablelike this `SET @first = 10` before the `EXECUTE` call, expecting the return to be `10,foo` ... right ? Wrong ! 
 
-The correct syntax to supply the arguments is either inline or Takeaway, using the syntax @name = @value
+The correct syntax to supply the arguments is either inline or using the syntax @name = @value
 
 Example: 
 
