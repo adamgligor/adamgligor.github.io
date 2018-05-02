@@ -2,14 +2,13 @@
 layout: post
 title: Calling stored procs
 date: '2018-05-01'
-draft: true
 tags: Sql
 ---
 
 The correct way of supplying arguments to a stored procedure.
 
 
-Don't count on sql management studio scripts to generate stored procedure calls correctly. 
+Sql management studio generate scripts can be slightly missleading, for example the script generated to execute a stored procedure. This is a reminder for myself to not make this same mistake again.
 
 Here's my dummy stored procedure with default values for the arguments:
 
@@ -25,7 +24,9 @@ END
 
 So I want to call this proc by supplying the first argument and using the default for the second. 
 
-With sql management studio, I choose `script stored procedure to new query window` and get this script: 
+From sql management studio, right click the stored proc and choose `script stored procedure as > create to > new query window`. 
+
+The generated script is this: 
 
 ```sql
 DECLARE @RC INT
@@ -33,18 +34,14 @@ DECLARE @first INT
 DECLARE @second VARCHAR(10)
 
 EXECUTE @RC = [dbo].[proc_foo]  @first, @second 
-```
-
-then add
 
 ```
-SET @first = 10
-```
 
-before `EXECUTE` and expecting it to return `10,foo` ... right ? Wrong ! 
+then my instinct was to init the variablelike this `SET @first = 10` before the `EXECUTE` call, expecting the return to be `10,foo` ... right ? Wrong ! 
 
+The correct syntax to supply the arguments is either inline or Takeaway, using the syntax @name = @value
 
-The correct syntax to supply the arguments is this: 
+Example: 
 
 ```sql
 DECLARE @RC INT
@@ -55,20 +52,11 @@ DECLARE @second VARCHAR(10)
 EXECUTE @RC = [dbo].[proc_foo] 2, 'bar' --returns 2,bar
 
 -- or with variables
-
 SET @first = 10
 SET @second = 'bar'
 EXECUTE @RC = [dbo].[proc_foo]  @first= @first, @second = @second --returns 10,bar  
-```
 
-So to supply ony some of the parametrers
-
-```sql
-DECLARE @RC INT
-DECLARE @first VARCHAR(10)
-DECLARE @second VARCHAR(10)
-
-
+-- or with just one (and the other takes the default value)
 SET @first = 10
 EXECUTE @RC = [dbo].[proc_foo]  @first = @first  --returns 10,foo  
 
@@ -77,7 +65,5 @@ EXECUTE @RC = [dbo].[proc_foo]  @second = @second  --returns 1,bar
 
 ```
 
-Takeaway, aleays specify parameters inline or using the syntax @name = @value
-
-More on sproc parameters from msdn [here](https://docs.microsoft.com/en-us/sql/relational-databases/stored-procedures/execute-a-stored-procedure?view=sql-server-2017)
+More on stored proc parameters on msdn [here](https://docs.microsoft.com/en-us/sql/relational-databases/stored-procedures/execute-a-stored-procedure?view=sql-server-2017)
 
