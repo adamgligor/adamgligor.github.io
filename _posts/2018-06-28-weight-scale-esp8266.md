@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Weights scale with esp8266
+title: Weight scale with esp8266
 date: '2018-06-28'
 tags: iot
 ---
@@ -11,7 +11,9 @@ Here's how to make a cheap weight scale for your iot project.
 
 ## Intro
 
-Part of one of the projects I'm envolved in this year was a digital scale that can send data over the internet. I'll describe the details and prototype i've come up with next.  
+Part of one of the projects I'm envolved in this year was a digital scale that can send data over the internet.
+
+I'll describe the details and prototype i've come up with next.  
 
 ## Hardware
 
@@ -40,7 +42,9 @@ Basically I had to  connect the load cells in a wheatstone bridge, the hx711 to 
 
 ## Assembly 
 
-These load cells I got are half bridge, meaning they contain two resistors. When under load one resistor will measure a positive change the other a negative change. The wiring on the cells I have is red to black is one resitor red to white is the other resistor. 
+These load cells I got are half bridge, meaning they contain two resistors. When under load one resistor will measure a positive change the other a negative change. 
+
+The wiring on the cells I have is red to black is one resitor red to white is the other resistor. 
 
 Made the bridge such as each arm has two resistors of the same type, either positive or negative. Then one pair of red wires is for applyng the input the other for reading the result.
 
@@ -55,7 +59,7 @@ Everything working at 3.3V.
 
 ## Programming 
 
-The nodemcu firmware for the esp8266, includes a module for operating the [hx711 module](https://nodemcu.readthedocs.io/en/master/en/modules/hx711/) 
+The nodemcu firmware for the esp8266 includes a module for operating the [hx711](https://nodemcu.readthedocs.io/en/master/en/modules/hx711/) 
 
 Source code is three lines of code. 
 
@@ -69,9 +73,9 @@ This will return a a number proportianal to the weight. It's actually the raw va
 
 ## Curve fitting 
 
-To get to a mathematical formula, assume a linear relationship that can be aproximated with a a first order function. 
+To get to a mathematical formula, assume a linear relationship that can be aproximated with a first order function. 
 
-Measure a few items with known weights and then use a curve fitting programm like [this](https://mycurvefit.com/) to find the ecuation.
+Measure a few items with known weights and then use a curve fitting programm like [this](https://mycurvefit.com/) to find that function.
 
 
 ## Prototype 
