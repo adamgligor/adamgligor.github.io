@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Calling stored procs
+title: Mssql stored procs and arguments
 date: '2018-05-01'
 tags: Sql
 ---
 
-The correct way of supplying arguments to a stored procedure.
+The correct way of supplying arguments to an msqql stored procedure.
 
 
 Sql management studio generate scripts can be slightly missleading, for example the script generated to execute a stored procedure. This is a reminder for myself to not make this same mistake again.
