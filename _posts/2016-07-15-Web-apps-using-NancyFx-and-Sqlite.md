@@ -5,7 +5,7 @@ date: '2016-07-15'
 tags: .net
 ---
 
-Simple problems require simple tools. I got the opportunity to build a small .Net web app using the less known web framework NancyFx. Combine that with Sqlite for storage engine and Ratchet for front-end and you're in for a threat.    
+Simple problems require simple solutions. I got the opportunity to build a small .Net web app using the less known web framework NancyFx, Sqlite for storage  and Ratchet library for the ui.
 
 ## The setup
 
