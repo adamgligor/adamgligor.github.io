@@ -32,5 +32,5 @@ Happy logging ...
 ## Links
 
 - prezi [link](https://prezi.com/gbouaz-gj8g0/log-processing-and-analysis/)
-- github [link](https://github.com/adam-gligor/elkdemo)
+- github [link](https://github.com/adam-gligor/archeology/tree/master/elkstack-demo-master/elkstack-demo-master)
 - elastic home [link](https://www.elastic.co/)

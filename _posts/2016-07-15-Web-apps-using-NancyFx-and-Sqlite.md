@@ -70,7 +70,7 @@ Since this combination of frameworks was new to me too, I decided to do my homew
 
 The theme: flash-cards ... it's a learning tool to help you memorize bits of information that can be written onto cards.
 
-I won't go into details of the implementation, you can check out the [demo](http://nine123.azurewebsites.net/) running in azure and the [code](https://github.com/adam-gligor/nancy-flash) on github.
+I won't go into details of the implementation, check out the [code](https://github.com/adam-gligor/archeology/tree/master/nancy-flash-master/nancy-flash-master) on github.
 
 ## Tips & things to watch out for
 

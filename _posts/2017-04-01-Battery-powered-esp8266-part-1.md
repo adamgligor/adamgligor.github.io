@@ -17,7 +17,7 @@ I wanted a thermometer to measure the temperature outside that would store the c
 
 First challange was finding a device capable of connecting to the internet and commanding a few sensors. As most techies I've heared of adruino and raspbery pi, but this project required something far more basic and hopefully more battery friendly. Alter doing the research I stumbled upon ESP8266. This is a chinese device with wifi, tcp stack, high level programming language all in a very compact package. 
 
-Since its appearence in 2014 it gained a lot of popularity, testimony to that being the multitude of articles, projects and resources. Read more about the device on the wikipedia page [link](https://en.wikipedia.org/wiki/ESP82667)
+Since its appearence in 2014 it gained a lot of popularity, testimony to that being the multitude of articles, projects and resources. Read more about the device on the wikipedia page [link](https://en.wikipedia.org/wiki/ESP8266)
 
 ## The requirements 
 
