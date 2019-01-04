@@ -101,4 +101,4 @@ In  the next post I'll be showing the device prototype, the experiments with run
 ## References
 
 - Esp comunity forum [link](http://www.esp8266.com/)
-- Nodemcu firmware home [link](http://nodemcu.com/index_en.html)
+- Nodemcu firmware home [link](http://www.nodemcu.com/index_en.html)

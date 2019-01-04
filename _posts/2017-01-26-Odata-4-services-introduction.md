@@ -377,6 +377,6 @@ For testing the endpoints I use powershell or [postman](https://chrome.google.co
 
 ## References
 
-- Github source code [link](https://github.com/adam-gligor/OdData4Sample)
+- Github source code [link](https://github.com/adam-gligor/archeology/tree/master/OdData4Sample-master/OdData4Sample-master)
 - The Odata standard [link](http://docs.oasis-open.org)
 - Documentation on using on odata4 with web api [link](http://odata.github.io/WebApi)

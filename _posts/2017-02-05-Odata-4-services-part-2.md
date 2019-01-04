@@ -247,5 +247,5 @@ Invoke-WebRequest -URI "http://localhost:61162/odata/TheOne/" -Method Get
 
 ## References
 
-- Github source code [link](https://github.com/adam-gligor/OdData4Sample)
+- Github source code [link](https://github.com/adam-gligor/archeology/tree/master/OdData4Sample-master/OdData4Sample-master)
 

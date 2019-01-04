@@ -98,4 +98,4 @@ Double checked with this calculator [link](http://oregonembedded.com/batterycalc
 ## References
 
 - Esp comunity forum [link](http://www.esp8266.com/)
-- Nodemcu firmware home [link](http://nodemcu.com/index_en.html)
+- Nodemcu firmware home [link](http://www.nodemcu.com/index_en.html)
