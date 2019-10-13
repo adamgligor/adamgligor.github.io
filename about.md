@@ -8,9 +8,7 @@ title: About
 </p>
 
 
-I'm Adam. I work as a professional software developer with close to 10 years experience. Most of this time I spent working with web technologies, I use .net/c# as my primary programming language.
-
-In my free time I like learning new things, experimenting, tinkering with whatever comes into my hand from construction related things to electronics, also enjoy reading sci-fi novels and fitness.
+I'm Adam. In my professional life I work as a software developer. In my free time i like fixing and tinkering with things, enjoy reading and fitness and learning new things.
 
 ## The blog
 
