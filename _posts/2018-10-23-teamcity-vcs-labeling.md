@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Teamcity vcs labeling confusion
+title: Confused about teamcity vcs labeling
 date: '2018-10-23'
 tags: teamcity
 ---
 
-Teamcity Vcs labeling feature confusion ...
+I'm confused about teamcity Vcs labeling feature ...
 
 ## Intro 
 
