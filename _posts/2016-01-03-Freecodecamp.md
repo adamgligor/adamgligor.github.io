@@ -2,7 +2,7 @@
 layout: post
 title: Freecodecamp. Learn to code and help non profits
 date: '2016-01-02'
-tags: freecodecamp
+tags: programming
 ---
 
 In this post i'll share my experience with freecodecamp.
