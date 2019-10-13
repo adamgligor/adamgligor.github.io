@@ -2,7 +2,7 @@
 layout: post
 title:  Odata 4 service tutorial - part 2
 date: '2017-03-02'
-tags: odata
+tags: programming
 ---
 
 

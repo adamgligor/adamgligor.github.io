@@ -2,7 +2,7 @@
 layout: post
 title: Freecodecamp progress update 2
 date: '2016-01-28'
-tags: freecodecamp javascript
+tags: programming
 ---
 
 Finished the "Basic frontend development projects".

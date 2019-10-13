@@ -2,7 +2,7 @@
 layout: post
 title: Phpbb hosting in Azure
 date: '2018-01-08'
-tags: azure
+tags: programming
 ---
 
 

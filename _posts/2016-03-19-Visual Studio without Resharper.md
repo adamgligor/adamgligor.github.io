@@ -2,7 +2,7 @@
 layout: post
 title: Mastering Visual Studio keyboard shortcuts
 date: '2016-03-19'
-tags: .net
+tags: programming
 ---
 
 I use visual studio at my day job. Recently decided to stop using resharper and instead rely only on visual studio features. This post will be about features and keyboard shortcuts and focused towards editing and navigation.

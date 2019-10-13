@@ -3,7 +3,7 @@ layout: post
 title: Aprilia pegaso 650 cube carb removal
 description: Remove the carburettor from an aprilia pegaso 650
 date: '2018-11-04'
-tags: motorcycle
+tags: mechanics
 ---
 
 The 36 steps to remove the carburettor from an aprilia pegaso 650 (cube, model '97) 

@@ -2,7 +2,7 @@
 layout: post
 title: Confused about teamcity vcs labeling
 date: '2018-10-23'
-tags: teamcity
+tags: programming
 ---
 
 I'm confused about teamcity Vcs labeling feature ...

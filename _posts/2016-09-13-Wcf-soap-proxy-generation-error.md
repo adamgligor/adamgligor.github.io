@@ -2,7 +2,7 @@
 layout: post
 title: Wcf soap proxy generation error
 date: '2016-09-13'
-tags: .net
+tags: programming
 ---
 
 There is a limitation in the XML Schema Definition Tool (xsd.exe) that causes the proxy classes to be generated incorrectly for certain cases of "unbounded" elements.

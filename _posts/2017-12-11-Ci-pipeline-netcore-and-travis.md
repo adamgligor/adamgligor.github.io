@@ -2,7 +2,7 @@
 layout: post
 title:  CI piepeline with Travis CI for .Net Core and Azure hosting
 date: '2017-12-11'
-tags: .net
+tags: programming
 ---
 
 

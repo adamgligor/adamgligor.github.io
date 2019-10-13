@@ -2,7 +2,7 @@
 layout: post
 title: Kanban board with React
 date: '2018-06-28'
-tags: javascript
+tags: programming
 ---
 
 

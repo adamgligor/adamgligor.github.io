@@ -2,7 +2,7 @@
 layout: post
 title: Freecodecamp progress update 1
 date: '2016-01-10'
-tags: freecodecamp javascript
+tags: programming
 ---
 
 Finished the "Basic algorithm scripting" and "Intermediate algorithm scripting" sections.

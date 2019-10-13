@@ -2,7 +2,7 @@
 layout: post
 title: Mssql stored procs and arguments
 date: '2018-05-01'
-tags: Sql
+tags: programming
 ---
 
 The correct way of supplying arguments to an msqql stored procedure.

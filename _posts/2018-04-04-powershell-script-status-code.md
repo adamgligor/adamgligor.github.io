@@ -2,7 +2,7 @@
 layout: post
 title: PowerShell tip - exit code
 date: '2018-04-04'
-tags: PowerShell
+tags: programming
 ---
 
 A PowerShell script executed by SQL server using `xp_cmdshell` to return a numeric value. 

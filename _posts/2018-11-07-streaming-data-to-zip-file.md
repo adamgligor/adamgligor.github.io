@@ -3,7 +3,7 @@ layout: post
 title: Pipeline to stream data to a zip file
 description: 
 date: '2018-11-07'
-tags: .net
+tags: programming
 ---
 
 How to export huge amounts of data from a data source like a database into flat files efficiently. 

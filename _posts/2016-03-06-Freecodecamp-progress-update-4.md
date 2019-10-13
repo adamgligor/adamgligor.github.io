@@ -2,7 +2,7 @@
 layout: post
 title: Freecodecamp progress update 4
 date: '2016-03-06'
-tags: freecodecamp javascript
+tags: programming
 ---
 
 Got my front end development certificate from Freecodecamp !

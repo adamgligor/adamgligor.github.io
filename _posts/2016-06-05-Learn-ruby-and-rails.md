@@ -2,7 +2,7 @@
 layout: post
 title: Ruby lang learning resources
 date: '2016-06-05'
-tags: ruby
+tags: programming
 ---
 
 Curious about ruby ? Here are some resources

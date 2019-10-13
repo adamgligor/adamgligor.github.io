@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Aprilia pegaso 650 - new air tubes
+title: Aprilia pegaso 650 new air tubes
 description: 
 date: '2019-03-15'
 tags: mechanics

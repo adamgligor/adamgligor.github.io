@@ -2,7 +2,7 @@
 layout: post
 title: Logging with Elastic search
 date: '2016-04-17'
-tags: search elastic
+tags: programming
 ---
 
 Demo on using ELK stack for logging and analysis. Included Vagrant box and install scripts for elasticsearch, logstash, kibana on ubuntu vm.

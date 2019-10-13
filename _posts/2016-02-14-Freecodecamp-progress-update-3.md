@@ -2,7 +2,7 @@
 layout: post
 title: Freecodecamp progress update 3
 date: '2016-02-14'
-tags: freecodecamp javascript
+tags: programming
 ---
 
 Here's an update on my progress with the freecodecamp challenges. First the sections got reorganized recently. The "intermediate front end development project" got split up into two "intermediate" and "advanced", some challenges disappeared and got replaced by new ones.
