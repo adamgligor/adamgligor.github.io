@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Learn ruby and rails
+title: Ruby lang learning resources
 date: '2016-06-05'
 tags: ruby
 ---
 
-Want to learn ruby and rails ? I recently started looking at ruby, in this post I will list the resources and learning methods I settled on. If interested read on...      
+Curious about ruby ? Here are some resources
 
 ## Learning ruby - the language
 
