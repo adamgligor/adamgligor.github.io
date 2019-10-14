@@ -52,7 +52,7 @@ Front tire
 Tightening torques 100NM for the rear axel, 80NM for the front axel.
 
 
- ## Tools 
+## Tools 
 
 - Car jacks or scrap wood to support the motorcycle 
 - Levers to remove the tire 
