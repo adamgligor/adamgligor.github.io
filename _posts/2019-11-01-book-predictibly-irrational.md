@@ -7,6 +7,8 @@ tags: books
 draft: true
 ---
 
+Uncovering biases in how we think and act using a set of experiments 
+
 Experiments to uncover our brain's short-commings ... to behavior, decision making
 
 ## Review 
