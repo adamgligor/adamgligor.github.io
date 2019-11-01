@@ -8,7 +8,7 @@ tags: books
 
 Biases and irrational behavior probed through experiments ... 
 
-![placeholder](/public/book_irrational/cover.jpg "cover")
+![placeholder](/public/book_irrational/cover.jpeg "cover")
 
 ## Review 
 
