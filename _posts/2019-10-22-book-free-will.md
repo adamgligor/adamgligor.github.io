@@ -22,7 +22,7 @@ Imagine that you used to be fit but now are lazy and overweight. You might be ab
 
 A year later some random event like you see a movie or talk to someone and, you find this reservoir of will and things just tick, over the next few months you swap fat for muscle and you're body is completely transformed. How can you account for your ability to make these efforts today and not a year ago? The emergence of choices, efforts, and intentions is a fundamentally mysterious process.
 
-Think about your next decision. Your brain is making choices on the basis of preferences and beliefs that have been hammered into it over a life-time by inherited genes, physical development, interactions with other people, events and ideas, a process over which you had little or control. Yes, you are free to do what you desire but where did the desires come from?
+Think about your next decision. Your brain is making choices on the basis of preferences and beliefs that have been hammered into it over a life-time by inherited genes, physical development, interactions with other people, events and ideas, a process over which you had little or no control. Yes, you are free to do what you desire but where did the desires come from?
 
 Recent advancements in MRI and deeper probing into the brain allowed for interesting experiments whose findings are difficult to reconcile with the sense that we are the conscious authors of our actions.
 
