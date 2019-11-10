@@ -8,7 +8,7 @@ title: About
 </p>
 
 
-I'm Adam. In my professional life I work as a software developer. In my free time i like fixing and tinkering with things, enjoy reading and fitness and learning new things.
+I'm Adam. In my professional life I work as a software developer. In my free time i like fixing and building things, enjoy reading, fitness and learning new things.
 
 ## The blog
 
