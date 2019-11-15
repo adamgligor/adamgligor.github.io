@@ -124,5 +124,5 @@ This was my first attempt at doing this job. It took me one weekend research, an
 
 ## Resources
 
-- Elsa, the more popular documentation app 
+- Elsa, the vw documentation app 
 - Odbeleven, a similarly popular diagnostics tool
