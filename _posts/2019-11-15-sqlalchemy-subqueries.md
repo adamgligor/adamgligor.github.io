@@ -10,7 +10,7 @@ Here's how I put together a complex query in sqlalchemy using subqueries
 
 ## Approach
 
-Just because my brain already understands sql syntax I choose something that reads like sql, but it's not the only way to put queries together. This is the general syntax I use:
+My brain already understands sql syntax so I choose something that reads like sql, but sqlalchemy has more than one syntax. This is the general syntax I use:
 
 ```
 query or subquery = session.query(
@@ -58,7 +58,9 @@ class Revenue(Base):
     total_revenue = Column(Integer)
 ```
 
-**Problem** Find the vendors and the domains with highest revenue that contributed to 90% of the total revenue in the past 7 days
+**Problem** 
+
+Find the vendors and the domains with highest revenue that contributed to 90% of the total revenue in the past 7 days
 
 ```python
     session = DBSession()
@@ -86,6 +88,8 @@ class Revenue(Base):
         and_(revenue_a.total_revenue > 0, revenue_b.total_revenue > 0)
     ).filter(
         func.datediff(func.now(), revenue_a.date) <= 7
+    ).group_by(
+        revenue_a.domain_id
     ).having(
         func.sum(revenue_b.total_revenue) <= sub_query
     ).order_by(
@@ -131,6 +135,8 @@ FROM
             revenue_1.total_revenue > ?
             AND revenue_2.total_revenue > ?
             AND datediff(CURRENT_TIMESTAMP, revenue_1.date) <= ?
+        GROUP BY
+            revenue_1.domain_id
         HAVING
             sum(revenue_2.total_revenue) <= (
                 SELECT ? * SUM(revenue.total_revenue) AS anon_2 
@@ -143,7 +149,7 @@ ORDER BY anon_1.total_revenue
 
 ```
 
-Note that this problem can be solved in more than one way, I just choose a solution that can be translated easily to sqlalchemy.
+This problem can be solved in more than one way and this not necessary the best way, I just dumped this example for future reference, the documention for sql alchemy is hard to navigate.
 
 
 ## Resources
