@@ -63,54 +63,54 @@ class Revenue(Base):
 Find the vendors and the domains with highest revenue that contributed to 90% of the total revenue in the past 7 days
 
 ```python
-    session = DBSession()
+session = DBSession()
 
-    # first subquery to calculate 90% of revenue of last 7 days
-    sub_query = session.query(
-        0.9 * func.sum(Revenue.total_revenue)
-    ).select_from(
-        Revenue
-    ).filter(
-        func.datediff(func.now(), Revenue.date) <= 7
-    ).subquery()
+# first subquery to calculate 90% of revenue of last 7 days
+sub_query = session.query(
+    0.9 * func.sum(Revenue.total_revenue)
+).select_from(
+    Revenue
+).filter(
+    func.datediff(func.now(), Revenue.date) <= 7
+).subquery()
 
-    # second subquery will return only those domains that are in the top 90% (by keeping partial total)
-    revenue_a = aliased(Revenue)
-    revenue_b = aliased(Revenue)
-    sub_query2 = session.query(
-        revenue_a.domain_id, revenue_a.total_revenue
-    ).select_from(
-        revenue_a
-    ).join(
-        revenue_b,
-        revenue_b.total_revenue >= revenue_a.total_revenue
-    ).filter(
-        and_(revenue_a.total_revenue > 0, revenue_b.total_revenue > 0)
-    ).filter(
-        func.datediff(func.now(), revenue_a.date) <= 7
-    ).group_by(
-        revenue_a.domain_id
-    ).having(
-        func.sum(revenue_b.total_revenue) <= sub_query
-    ).order_by(
-        revenue_a.total_revenue.desc()
-    ).subquery()
+# second subquery will return only those domains that are in the top 90% (by keeping partial total)
+revenue_a = aliased(Revenue)
+revenue_b = aliased(Revenue)
+sub_query2 = session.query(
+    revenue_a.domain_id, revenue_a.total_revenue
+).select_from(
+    revenue_a
+).join(
+    revenue_b,
+    revenue_b.total_revenue >= revenue_a.total_revenue
+).filter(
+    and_(revenue_a.total_revenue > 0, revenue_b.total_revenue > 0)
+).filter(
+    func.datediff(func.now(), revenue_a.date) <= 7
+).group_by(
+    revenue_a.domain_id
+).having(
+    func.sum(revenue_b.total_revenue) <= sub_query
+).order_by(
+    revenue_a.total_revenue.desc()
+).subquery()
 
-    # everything together
-    query = session.query(
-        Vendor.id,
-        Vendor.name,
-        Domain.fqdn,
-        sub_query2.c.total_revenue.label('revenue')
-    ).select_from(
-        Vendor
-    ).join(
-        Domain, Vendor.id == Domain.vendor_id
-    ).join(
-        sub_query2, sub_query2.c.domain_id == Domain.id
-    ).order_by(
-        sub_query2.c.total_revenue
-    )
+# everything together
+query = session.query(
+    Vendor.id,
+    Vendor.name,
+    Domain.fqdn,
+    sub_query2.c.total_revenue.label('revenue')
+).select_from(
+    Vendor
+).join(
+    Domain, Vendor.id == Domain.vendor_id
+).join(
+    sub_query2, sub_query2.c.domain_id == Domain.id
+).order_by(
+    sub_query2.c.total_revenue
+)
 ```
 
 Generated sql: 
