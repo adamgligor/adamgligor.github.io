@@ -19,7 +19,7 @@ To perform this operation I followed the procedure as described in the service m
 This will be my first attempt at this.
 
 
-The motorcycle in one piece. Realy a dinousaur, no fuel injection, no fuel pump, no computers, just gravity and world war 2 technology
+The motorcycle in one piece. A real dinousaur, no fuel injection, no fuel pump, no computers, just gravity and world war 2 technology
 
 ![placeholder](/public/aprilia_carb_removal/start.jpg "start")
 
@@ -45,7 +45,7 @@ Step by step procedure
  9. Disconnect the idle screw cable
  10. Extract the carburetors
 
-I start with an almost empty tank and closing the fuel tap, the manual calls for emptying the tank, which I won't do.
+I start by closing the fuel tap on an almost empty tank, the manual calls for emptying the tank, which I won't do.
 
 Remove the sides by unscrewing screws `1-4` per side.
 
