@@ -2,7 +2,7 @@
 layout: post
 title: Sqlalchemy complex queries and subqueries
 description: 
-date: '2018-11-15'
+date: '2019-11-15'
 tags: programming
 ---
 
