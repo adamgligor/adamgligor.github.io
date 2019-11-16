@@ -74,11 +74,12 @@ sub_query = session.query(
     func.datediff(func.now(), Revenue.date) <= 7
 ).subquery()
 
-# second subquery will return only those domains that are in the top 90% (by keeping partial total)
+# second subquery will return only those domains that are in the top 90% revenue 
+# (using join >= and sum to calculate partial totals)
 revenue_a = aliased(Revenue)
-revenue_b = aliased(Revenue)
+revenue_b = aliased(Revenuel)
 sub_query2 = session.query(
-    revenue_a.domain_id, revenue_a.total_revenue
+    revenue_a.domain_id
 ).select_from(
     revenue_a
 ).join(
@@ -92,24 +93,24 @@ sub_query2 = session.query(
     revenue_a.domain_id
 ).having(
     func.sum(revenue_b.total_revenue) <= sub_query
-).order_by(
-    revenue_a.total_revenue.desc()
-).subquery()
+).distinct().subquery()
 
 # everything together
 query = session.query(
     Vendor.id,
     Vendor.name,
     Domain.fqdn,
-    sub_query2.c.total_revenue.label('revenue')
+    func.sum(Revenue.total_revenue).label('revenue')
 ).select_from(
     Vendor
 ).join(
     Domain, Vendor.id == Domain.vendor_id
 ).join(
+    Revenue, Revenue.domain_id == Domain.id
+).join(
     sub_query2, sub_query2.c.domain_id == Domain.id
-).order_by(
-    sub_query2.c.total_revenue
+).group_by(
+    Vendor.id, Domain.id, Domain.fqdn
 )
 ```
 
@@ -120,14 +121,14 @@ SELECT
     vendor.id AS vendor_id,
     vendor.name AS vendor_name,
     domain.fqdn AS domain_fqdn,
-    anon_1.total_revenue AS anon_1_total_revenue
+    sum(revenue.total_revenue) AS revenue
 FROM
     vendor
     JOIN domain ON vendor.id = domain.vendor_id
+    JOIN revenue ON revenue.domain_id = domain.id
     JOIN (
-        SELECT
-            revenue_1.domain_id AS domain_id,
-            revenue_1.total_revenue AS total_revenue
+        SELECT DISTINCT
+            revenue_1.domain_id AS domain_id
         FROM
             revenue AS revenue_1
             JOIN revenue AS revenue_2 ON revenue_2.total_revenue >= revenue_1.total_revenue
@@ -135,17 +136,18 @@ FROM
             revenue_1.total_revenue > ?
             AND revenue_2.total_revenue > ?
             AND datediff(CURRENT_TIMESTAMP, revenue_1.date) <= ?
-        GROUP BY
-            revenue_1.domain_id
+        GROUP BY revenue_1.domain_id
         HAVING
             sum(revenue_2.total_revenue) <= (
-                SELECT ? * SUM(revenue.total_revenue) AS anon_2 
+                SELECT
+                    ? * sum(revenue.total_revenue) AS anon_2
                 FROM revenue
-                WHERE datediff(CURRENT_TIMESTAMP, revenue_1.date) <= ?
+                WHERE
+                    datediff(CURRENT_TIMESTAMP, revenue_1.date) <= ?
             )
-        ORDER BY revenue_1.total_revenue DESC
     ) AS anon_1 ON anon_1.domain_id = domain.id
-ORDER BY anon_1.total_revenue
+    GROUP BY
+        vendor.id, domain.id, domain.fqdn
 
 ```
 
@@ -157,3 +159,4 @@ This problem can be solved in more than one way and this not necessary the best 
 Sqlalchemy docs
 
 - query api [here](https://docs.sqlalchemy.org/en/13/orm/query.html)
+- orm tutorial [here](https://docs.sqlalchemy.org/en/13/orm/tutorial.html)
