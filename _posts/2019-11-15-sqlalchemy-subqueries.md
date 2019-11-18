@@ -62,7 +62,7 @@ One `vendor` can have one or more `domain`s and `revenue` tracks the daily reven
 
 **Problem** 
 
-Find the vendors and the domains with highest revenue that contributed to 90% of the total revenue in the past 7 days
+Find the vendors and the domains with highest revenue that contributed to 90% of the revenue of the past 7 days
 
 ```python
 session = DBSession()
