@@ -10,7 +10,7 @@ Here's how I put together a complex query in sqlalchemy using subqueries
 
 ## Approach
 
-My brain already understands sql syntax so I choose something that reads like sql, but sqlalchemy has more than one syntax. This is the general syntax I use:
+My brain already understands sql syntax so I choose something that reads like sql, however it's not the only syntax.
 
 ```
 query or subquery = session.query(
@@ -57,6 +57,8 @@ class Revenue(Base):
     domain_id = Column(Integer, ForeignKey(Domain.id))
     total_revenue = Column(Integer)
 ```
+
+One `vendor` can have one or more `domain`s and `revenue` tracks the daily revenues per domain
 
 **Problem** 
 
