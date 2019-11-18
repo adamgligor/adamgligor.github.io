@@ -22,12 +22,12 @@ query or subquery = session.query(
 ).join(
   ....
 ).[other clauses]
-
+[.subquery()]
 ```
 
 ## Example 
 
-The following excercise showcases: 
+The following exercise showcases: 
 
  - aggregation
  - filtering, sorting
@@ -151,7 +151,7 @@ FROM
 
 ```
 
-This problem can be solved in more than one way and this not necessary the best way, I just dumped this example for future reference, the documention for sql alchemy is hard to navigate.
+This problem can be solved in more than one way and this not necessary the best way, but it's complex enough to serve as reference for the syntax, the documentation for sql alchemy is hard to navigate.
 
 
 ## Resources
