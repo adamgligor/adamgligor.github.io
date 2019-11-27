@@ -126,7 +126,7 @@ Finally the carbs taken out, two `Mikuni bst-33` CV carburettors.
 
 It took me about 3 hours to take everything off, probably second time I can do it much faster.
 
-It really takes 36 steps to get the carb out, which is kind of a bummer I expected much less work. 
+It really takes 36 steps to get the carb out, which is kind of a bummer I expected much easier access. 
 
 The parts that require extra attention
 
