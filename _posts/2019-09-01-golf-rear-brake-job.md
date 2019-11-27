@@ -10,23 +10,23 @@ Rear brake job on a vw golf mk7
 
 ## Intro
 
-I'm renewing the rear brakes on a volkswagen golf mk7, brake pads and rotors. Bonus challenge, the car has ebrakes, meaning I also need a diagnostics tool.
+I'm renewing the rear brakes on a volkswagen golf mk7, brake pads and rotors. Bonus challenge, the car has ebrakes, the thing can't be take apart without a diagnostics tool.
 
 ## Parts & documentation
 
 As always good preparation is key. VW cars being popular, I managed to obtain good documentation easily.
 
-There are at least 3 or 4 brake types installed on the golf mk7 all with differnt parts. To find and buy the matching parts I use all the car codes I can find (vin, engine, etc) do visual comparison, plus measure the rotor size and check bolt types and sizes 
+There are at least 3 or 4 brake types installed on the golf mk7 all with different parts. To find the matching parts I use all the car codes I can find (vin, engine, etc) do visual comparison, plus measure the rotor size and check bolt types and sizes.
 
-Next on, reading and understands the procedure and double-checking on youtube and forums.
+Next I read and understands the procedure and double-check on youtube and forums.
 
 ## Tools & parts
 
 Tools:
 - Jacks lift the car
-- Car diagnostics tool, releases the parking brake (ex. Odbeleven)
+- Car diagnostics tool, releases the parking brake (ex. Obdeleven)
 - Hex bit no.7, removes caliper pin bolts 
-- M14 triple square socket, removes caliper bolts (also called spline)
+- M14 triple square (or spline) socket, removes caliper bolts
 - Caliper tool, pushes caliper cylinders in
 - Torque wrench 
 - Brush wire, old rag for cleaning
@@ -39,12 +39,12 @@ Lubes and sprays:
 - Copper grease 
 - Silicon lube
 - WD40
-- Heat resistant paint (optionally)
+- Heat resistant paint (optional)
 
 Parts: 
  - new rotors 
  - new pads
- - new bolts and pins (optionally and if you can find them)
+ - new bolts and pins (optional, if you can find them)
 
 
 ## Procedure
@@ -65,7 +65,7 @@ Disassembly:
 
 Cleaning & preparation:
 - Clean everything with wire brush and brake cleaner 
-- Check that wheel turns smoothly 
+- Check that wheel hub turns smoothly 
 
 Reinstall in reverse order, additionally:
 - Copper grease on the wheel hub 
@@ -81,22 +81,22 @@ Finish
 
 **Tips**
 
-Start with removing the caliper bolts on the back that's the most difficult part. These are very well tight, I had a long breaker bar, but using one's feet is also an option.
+Start with removing the caliper bolts on the back that's the most difficult part. These are very well tight, I had a long breaker bar, alternatively try pushing the wrench with one foot.
 
 
-There isn't a lot of room to access the bolts, have multiple wrenches and extensions at hand. I found it easier to put an extension through the spring coil to get better leverage.
+There isn't a lot of room to access the bolts, have multiple wrenches and extensions at hand. I found it best to put an extension through the spring coil, that gets better leverage.
 
 
-Once the top part of the caliper is off, move it out of the way by hooking it up with a bungee to he shock absorber. There is a clip on the brake lines that can be disconnected easily to allow a bit more movement of the part.
+Once the top part of the caliper is off, move it out of the way by hooking it up to he shock absorber with a bungee. There is a clip on the brake lines that can be disconnected easily to allow a bit more movement of the part.
 
 
-Stuck rotors. Smack the front of the rotor with hammer but leave a partially crewed bolt on the rotor to prevent if from flying off. Use eye protection and a rag to minimize flying debris. It took me a good few minutes of heavy hammering with a 400g hammer.
+Stuck rotors. Smack the front of the rotor with hammer but have a partially screwed bolt on the rotor to prevent if from flying away. Use eye protection and a rag to minimize flying debris. It took me a good few minutes of heavy hammering with a 400g hammer.
 
 
 The new brake rotors might be oily, clean them with brake lube.
 
 
-Odbeleven usage. To retract the brakes, first disengage the brakes, go to brakes module, basic settings, `start brake lining change`. Hear the motor spinning and a yellow warning showing on the dash, turn off the ignition. After brakes are re-assembled re-deploy the brakes using `end brake lining change`
+Obdeleven usage. To retract the brakes, first disengage the brakes, go to brakes module, basic settings, `start brake lining change`. Hear the motor spinning and a yellow warning showing on the dash, turn off the ignition. After brakes are re-assembled re-deploy the brakes using `end brake lining change`
 
 
 ## Result and pics
@@ -125,4 +125,4 @@ This was my first attempt at doing this job. It took me one weekend research, an
 ## Resources
 
 - Elsa, the vw documentation app 
-- Odbeleven, a similarly popular diagnostics tool
+- Obdeleven, a similarly popular diagnostics tool
