@@ -153,7 +153,7 @@ FROM
 
 ```
 
-This problem can be solved in more than one way and this not necessary the best way, but it's complex enough to serve as reference for the syntax, the documentation for sql alchemy is hard to navigate.
+This problem can be solved in more than one way and this not necessary the best way, but it's complex enough to serve as reference for the syntax.
 
 
 ## Resources
