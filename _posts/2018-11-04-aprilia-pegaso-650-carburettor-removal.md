@@ -1,25 +1,25 @@
 ---
 layout: post
 title: Aprilia pegaso 650 cube carb removal
-description: Remove the carburettor from an aprilia pegaso 650
+description: Remove the carburetor from an aprilia pegaso 650
 date: '2018-11-04'
 tags: mechanics
 ---
 
-The 36 steps to remove the carburettor from an aprilia pegaso 650 (cube, model '97) 
+The 36 steps to remove the carburetor from an aprilia pegaso 650 (cube, model '97) 
 
 ## Intro 
 
-My '97 model Aprilia Pegaso 650. With the warm season comming to an end, it is time for some mentenance work, i'll start with removing and cleaning the carburettor. 
+My '97 model Aprilia Pegaso 650. With the warm season coming to an end, it is time for some maintenance work, i'll start with removing and cleaning the carburetor. 
 
-I am by no means a professional mechanic but I like machines and ocasional challenges. 
+I am by no means a professional mechanic but I like machines and occasional challenges. 
 
 To perform this operation I followed the procedure as described in the service manual.
 
 This will be my first attempt at this.
 
 
-The motorcycle in one piece. A real dinousaur, no fuel injection, no fuel pump, no computers, just gravity and world war 2 technology
+The motorcycle in one piece. A real dinosaur, no fuel injection, no fuel pump, no computers, just gravity and world war 2 technology
 
 ![placeholder](/public/aprilia_carb_removal/start.jpg "start")
 
@@ -36,10 +36,10 @@ Step by step procedure
  1. Remove the side fairings
  2. Disconnect the fuel pipes and sensor
  3. Remove the fuel tank
- 4. Remove the fuel tank suport plate 
- 5. Remove the passager steppers
+ 4. Remove the fuel tank support plate 
+ 5. Remove the pasager steppers
  6. Remove the exhaust silencers 
- 7. Tilt/pivot the rear subrame 
+ 7. Tilt/pivot the rear subframe 
  8. Loosen the carb fastening collars
  8. Disconnect the choke, acceleration cable 
  9. Disconnect the idle screw cable
@@ -51,7 +51,7 @@ Remove the sides by unscrewing screws `1-4` per side.
 
 ![placeholder](/public/aprilia_carb_removal/sides.jpg "sides")
 
-To remove the fuel tank, unscrew the tank fastener screws `1-3` per side and the screw `4` undeneath the seat.
+To remove the fuel tank, unscrew the tank fastener screws `1-3` per side and the screw `4` underneath the seat.
 
 ![placeholder](/public/aprilia_carb_removal/tank0.jpg "tank screws")
 
@@ -130,7 +130,7 @@ It really takes 36 steps to get the carb out, which is kind of a bummer I expect
 
 The parts that require extra attention
 
- - To not damage the 20 years old rubber manfolds that hold the carburettor. 
+ - To not damage the 20 years old rubber manifolds that hold the carburetor. 
  - The choke cable connector is a joke plastic screw, has to be handled gently to not damage the thread. 
  - To not lose the tiny parts: idle cable safety pin, choke plunger spring
 
