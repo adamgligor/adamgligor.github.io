@@ -10,7 +10,7 @@ Ancient wisdom transcending time.
 
 ## Review
 
-![placeholder](/public/book_mediations/cover.png "cover")
+![placeholder](/public/book_mediations/cover.jpeg "cover")
 
 `Meditations` is a a book of a rare kind. Marcus Aurelius Antoninus Augustus was a roman emperor and stoic philosopher. He wrote `Meditations` as a personal journal so it offers a glimpse into his inner thoughts. 
 
