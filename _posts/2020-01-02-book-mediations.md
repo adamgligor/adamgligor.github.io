@@ -14,11 +14,11 @@ Ancient wisdom transcending time.
 
 `Meditations` is a a book of a rare kind. Marcus Aurelius Antoninus Augustus was a roman emperor and stoic philosopher. He wrote `Meditations` as a source for his own guidance and self-improvement. 
 
-His believes were founded in stoicism, the most popular philosophy in ancient greece and the roman empire. The virtues in stoic philosophy can roughly be translated as: Wisdom, Courage, Justice, Temperance
+His believes were founded in stoicism, the most popular philosophy in ancient greece and the roman empire. The virtues in stoic philosophy can roughly be translated as: Wisdom, Courage, Justice, Temperance.
 
 The book contains practical advice on the relationship with ourseleves, other people, life and the universe. 
 
-I pulled out a couple of memorable quotes.
+I pulled out a couple of the memorable quotes.
 
 ## Quotes
 
