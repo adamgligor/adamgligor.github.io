@@ -4,7 +4,6 @@ title: Book review - Meditations
 description: 
 date: '2020-01-02'
 tags: books
-draft: true
 ---
 
 Ancient wisdom transcending time.
