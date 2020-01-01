@@ -16,7 +16,7 @@ Ancient wisdom transcending time.
 
 His believes were founded in stoicism, the most popular philosophy in ancient greece and the roman empire. The virtues in stoic philosophy can roughly be translated as: Wisdom, Courage, Justice, Temperance.
 
-The book contains practical advice on the relationship with ourseleves, other people, life and the universe. 
+The book contains practical advice on the relationship with ourselves, other people, life and the universe. 
 
 I pulled out a couple of the memorable quotes.
 
