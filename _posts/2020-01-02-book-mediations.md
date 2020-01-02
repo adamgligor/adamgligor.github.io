@@ -16,7 +16,7 @@ Ancient wisdom transcending time.
 
 His believes were founded in stoicism, the most popular philosophy in ancient greece and the roman empire. Stoic philosophy prescribes four virtues which loosly speaking are: Wisdom, Courage, Justice, Temperance.
 
-The pylosophical views expressed in the book are sound even after milenia, down to earth and full of practical advice to make one feel better. Here are a few of his memorable quotes.
+The pylosophical views expressed in the book are sound even after milenia, down to earth and full of practical advice. Here are a few of his memorable quotes.
 
 
 > You have power over your mind - not outside events. Realize this, and you will find strength.
