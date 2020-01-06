@@ -10,7 +10,7 @@ Here's how I put together a complex query in sqlalchemy using subqueries
 
 ## Approach
 
-My brain already understands sql syntax so I choose something that reads like sql, however it's not the only syntax.
+My brain already understands sql syntax so I choose something that reads like sql, it's just my personal preference not the only syntax.
 
 ```
 query or subquery = session.query(
