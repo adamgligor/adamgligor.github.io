@@ -79,7 +79,7 @@ sub_query = session.query(
 # second subquery will return only those domains that are in the top 90% revenue 
 # (using join >= and sum to calculate partial totals)
 revenue_a = aliased(Revenue)
-revenue_b = aliased(Revenuel)
+revenue_b = aliased(Revenue)
 sub_query2 = session.query(
     revenue_a.domain_id
 ).select_from(
