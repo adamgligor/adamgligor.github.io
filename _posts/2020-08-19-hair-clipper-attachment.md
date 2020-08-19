@@ -3,7 +3,7 @@ layout: post
 title: DIY 3d printed hair clipper attachment
 description: 
 date: '2020-01-02'
-tags: 3d printing
+tags: 3d-printing
 ---
 
 DIY 3d printed hair clipper attachment.
@@ -35,13 +35,13 @@ I use openscad for 3d modeling, that works fine for small things and it's progra
 
 First step is build something that can attach to the clipper, just a u shape with two holes on the side.
 
-![placeholder](/public/clipper-comb/openscad1.jpg "mount")
+![placeholder](/public/clipper-comb/openscad1.png "mount")
 
 After I got the right size for the mount I just build on top of that, by adding triangles and rectangles according the the 2d sketch.
 
 After a few more hours I get this. 
 
-![placeholder](/public/clipper-comb/openscad2.jpg "mount")
+![placeholder](/public/clipper-comb/openscad2.png "mount")
 
 and the code that draws that ...
 
@@ -126,6 +126,6 @@ On to 3d printing. Cura, slice, tweak and after 1 more hour I have my attachemen
 
 ## Resources 
 
- - Openscad 
- - Cura
- - Librecad 
+ - Openscad, 3d modeling [here](http://www.openscad.org/)
+ - Cura, slicer [here](https://ultimaker.com/software/ultimaker-cura)
+ - Librecad, 2s cad [here](https://librecad.org/)
