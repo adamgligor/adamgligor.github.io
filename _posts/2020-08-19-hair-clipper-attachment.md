@@ -2,7 +2,7 @@
 layout: post
 title: DIY 3d printed hair clipper attachment
 description: 
-date: '2020-01-02'
+date: '2020-08-19'
 tags: 3d-printing
 ---
 
