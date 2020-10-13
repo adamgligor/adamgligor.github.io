@@ -7,15 +7,13 @@ tags: books
 ---
 
 
-
-![placeholder](/public/book_no_fuck/cover.jpeg "cover")
-
-
 Problems are a constant in life. Problems never stop; they merely get exchanged and/or upgraded. Choose the problems you're willing to suffer for 
 and happiness will com from solving them.
 
 
 ## Summary
+
+![placeholder](/public/book_no_fuck/cover.jpeg "cover")
 
 
 This book is a mix of budism, psychology, stories and personal experiences. It's written in a pleasant and entertaining format. 
