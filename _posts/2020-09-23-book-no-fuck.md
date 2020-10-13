@@ -19,7 +19,7 @@ and happiness will com from solving them.
 This book is a mix of budism, psychology, stories and personal experiences. It's written in a pleasant and entertaining format. 
 
 
-Where it touches on many aspects of life and happyness these are the ideas i'd like to keep: 
+While the book touches on many aspects of life and happyness these are the ideas i'd like to keep: 
 
 
 On live, problems and happiness ...
