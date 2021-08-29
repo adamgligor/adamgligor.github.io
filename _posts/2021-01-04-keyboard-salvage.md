@@ -19,15 +19,15 @@ Nowdays I use the the `Ergonomic 4000` keyboard from microsoft which is a bit bu
 
 ## The salvage
 
-I decided to just replace the fabric on the wrist pads and keep it in service a few more years. Perhaps more attractive keyboards will become available in the near future. 
-
-For fabric I decided on synthetic leather with self adhesive already on it 10eu from amazon.
+I decided to keep the keyboard in service a few more years so i'm replace the fabric on the wrist pads. Perhaps in the near future more attractive keyboards will become available. 
 
 I wanted this to turn out as good as possible because staring at defects every day would make my brain itch and the keyboard would end up in the dumpster.
 
-Achieving millimeter scale tolerances without any tools was not that trivial. First the old fabric was bent so transferring the measurements required the use a cardboard template. Aligning the new fabric with adhesive already on it with the plastic piece and the foam was hassle since the shape is all curvy and the fabric needs to be stretched and bent around the corners. 
+For the fabric I decided on synthetic leather with self adhesive already on it, costs 10eu from amazon.
 
-With a bit of patience I got it done eventually. Not it looks almost as good as when it came out of the factory.
+Achieving millimeter scale tolerances without any tools was not that trivial. First the old fabric was bent so transferring the measurements required the use a cardboard template. Aligning the sticky new fabric with the plastic piece and the foam was hassle since the shape is all curvy and the fabric needs to be stretched and bent around the corners. 
+
+Eventually with a bit of patience I got it done. Now it looks almost as good as when it came out of the factory.
 
 
 
