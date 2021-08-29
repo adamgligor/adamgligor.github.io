@@ -4,16 +4,19 @@ title: About
 ---
 
 <p class="message">
-  Hey there! You found my website !
+  Hey there! My name is Adam Gligor and you've found my website !
 </p>
 
 
-I'm a software developer professionally. In my free time i like fixing and building things, enjoy reading, fitness and learning new things.
+I'm software developer working since the early 2000s on various software systems for different employers. I set up this website to publish some information about myself. I also write every when i'm in the mood about professional and personal stuff ... i don't use social media.
 
+## Resume 
 
-## The blog
+ TODO
 
-I've set up this blog to document the more interesting things I'm undertaking both professionally and as hobby.
+## Contact 
+
+ TODO
 
 ## Thanks
 
