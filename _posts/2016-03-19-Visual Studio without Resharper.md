@@ -5,9 +5,8 @@ date: '2016-03-19'
 tags: programming
 ---
 
-I use visual studio at my day job. Recently decided to stop using resharper and instead rely only on visual studio features. This post will be about features and keyboard shortcuts and focused towards editing and navigation.
+I use visual studio at my day job. I also use resharper which is a productivity booster tool. In an effort to simplify my work setup and reliance on third party tool I decided to learn the keyboard shortcuts in visual studio code. Here's a summary of the shortcuts that I find useful to learn and use.
 
-I've been using Resharper since it's early days, it's a great productivity booster but it also comes with a few annoyances. Major releases are often plagued by issues, it eats up a lot of resources and it requires a license. I decided to switch to using only the visual studio capabilities because visual studio 2015 now offers a much improved experience. I've also set myself a goal of becoming better with the keyboard and use mouse less. if you're happy with Resharper, I won't try to convince you to ditch it, you can skip the rest of the article. If you're interested what shortcuts I learned and use read on. In this guide I will focuses only on navigation and editing.  
 
 ## Level 0 - the basics
 
@@ -89,8 +88,6 @@ More useful shortcuts to help with editing
 - Select current word **Ctrl + Shift + W** (identical to double click)
 
 ## Level 2 - Wizard
-
-First time you'll try these you might feel you brain is about to explode. Keep exercising and soon you'll be jumping back and forth code bits and files like a pro.
 
 Clipboard ring. **Ctrl+Shift+V**, **Ctrl+Shift+Ins**. The clipboard retains more than just the last value, it's like a stack. You can move up and down the stack with the shortcuts and recall older clipboard data. One way to use this is when you need to copy bits from one file to another, just copy ctrl+c all the bits in the clipboard, then you can recall them when editing the other file just press ctrl+shift+v a couple of times to get the bits back.     
 
