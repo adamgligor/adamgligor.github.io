@@ -12,7 +12,7 @@ Microsoft keyboards, I use them for work and I like them. The wrist pad on my Er
 
 ## Keyboards
 
-I have my views when it comes to keyboards suitable for the programming job. It has to be silent, so mechanical keyboards are off the table. Has to be ergonomic to prevent wrist pain and ideally have the tenkeyless format and be wired.
+I have my views when it comes to keyboard that's suitable for the programming job. It has to be silent, so mechanical keyboards are off the table. Has to be ergonomic to prevent wrist pain and ideally have the tenkeyless format and be wired.
 
 Nowdays I use the the `Ergonomic 4000` keyboard from microsoft which is a bit bulky works fine and I like it. Previously I used the `Sculpt Ergonomic` keyboard but unfortunately that did not last long.
 
