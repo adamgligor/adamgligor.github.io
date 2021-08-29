@@ -5,16 +5,11 @@ date: '2016-07-15'
 tags: programming
 ---
 
-Simple problems require simple solutions. I got the opportunity to build a small .Net web app using the less known web framework NancyFx, Sqlite for storage  and Ratchet library for the ui.
+There are frameworks that are suited for simple apps and I got the opportunity to build one. Here are a few words about a less known web framework NancyFx and Ratchet library for the ui.
 
-## The setup
+## Context
 
-A collaboration between the company and a local organization lead to me trying to teach a group of high school the nuts and bolts of developing web apps. The program spans over a period of about two months with weekly one hour sessions.    
-
-## The frameworks
-
-Developing web apps on .NET means most commonly using a flavor of ASP.NET and MSSQL. That's all fine but, given the starting level of knowledge and time constraints I wanted something more lightweight. Enter NancyFx ...
-
+A collaboration between my employer and a local organization lead to me becoming the teacher for a group of high school students during the summer. We're going building a small functioning web app backed by a database. Developing web apps on .NET means ASP.NET and MSSQL but this time I wanted something more lightweight. Enter NancyFx ...
 
 ### NancyFx
 
