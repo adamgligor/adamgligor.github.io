@@ -7,7 +7,7 @@ tags: diy
 ---
 
 
-I like microsoft keyboards, I use them for work and I like them. The wrist pad on my Ergonomic 4000 keyboard got worn to the point that fabric bits started to peal off and make a mess on my desk. Salvage or buy a new one ?
+Microsoft keyboards, I use them for work and I like them. The wrist pad on my Ergonomic 4000 keyboard got worn to the point that fabric bits started to peal off and make a mess on my desk. Salvage or buy a new one ?
 
 
 ## Keyboards
