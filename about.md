@@ -4,11 +4,12 @@ title: About
 ---
 
 <p class="message">
-  Hey there! Thanks for checking out my blog!
+  Hey there! You found my website !
 </p>
 
 
-I'm Adam. In my professional life I work as a software developer. In my free time i like fixing and building things, enjoy reading, fitness and learning new things.
+I'm a software developer professionally. In my free time i like fixing and building things, enjoy reading, fitness and learning new things.
+
 
 ## The blog
 

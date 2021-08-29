@@ -38,6 +38,6 @@ gems:
   - jekyll-gist
 
 pages_list:
-  Blog: '/'
+  Articles: '/'
   About: '/about'
   Archive: '/archive'
