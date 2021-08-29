@@ -31,5 +31,5 @@ With a bit of patience I got it done eventually. Not it looks almost as good as 
 
 
 
-![placeholder](/public/2021/01/2021-01-04-keyboard.png, "keyboard")
+![placeholder](/public/2021/01/2021-01-04-keyboard.png "keyboard")
 
