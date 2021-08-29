@@ -8,13 +8,12 @@ title: About me
 </p>
 
 
-I'm software developer working since the early 2000s on various software systems for different employers. I set up this website to publish some information about myself. I also write every when i'm in the mood about professional and personal stuff ... i don't use social media.
+You can find information about me on this website. 
 
-## Resume & contact
+I write here about professional and personal things when I'm in the mood, i don't use social media.
 
- TODO
-
+My resume and contact information is available [here](/public/2021/08/2021_08_29_cv_resume.pdf)
 
 ## Thanks
 
-[Jekyll](http://jekyllrb.com) & [Poole](http://getpoole.com/) for providing the blogging platform and [GitHub Pages](https://pages.github.com) for hosting.
+[Jekyll](http://jekyllrb.com) for providing the platform and [GitHub Pages](https://pages.github.com) for the hosting.
