@@ -5,11 +5,7 @@ date: '2016-10-16'
 tags: programming
 ---
 
-Programming principles, aren't there enough articles on the subject ? My motivation for writing this article was to round up all the priciples that I found usefull based on my personal experience, 
-and have them availabe for reference when needed. 
-
-Without claiming to have built and exhaustive list of principles here it is ... programming principles worth knowing 
-
+Programming principles, got to memorize a few. They do contain some useful advice.
 
 
 ## KISS - Keep It Simple Stupid

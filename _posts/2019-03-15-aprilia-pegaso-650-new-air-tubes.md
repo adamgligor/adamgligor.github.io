@@ -7,10 +7,9 @@ tags: mechanics
 ---
 
 
-Spring and sun finally here, perfect time to mess some more with the motorcycle. I'll be installing new air tubes.
+Spring is finally here, time to tinker with the motorcycle. I'll be installing new air tubes.
 
-
-This will be my first attempt at this this procedure. I'm doing it because I noticed my rear tire goes flat every now and then with no apparent explanation, and I want to be comfortable that I can fix a tire in case I need to, like when going on a trail in the woods. 
+Changing tubes is a useful skill for like ... when going on a trail in the woods. 
 
 ## Preparations
 
@@ -92,10 +91,7 @@ Next the front tire. This is thinner, besides the fact that I had to use support
 A well spent Saturday, a very satisfying job.
 
 
-Final tips: 
-
-To ensure you can put together what you taken apart it is a good idea to first acquire a manual, do some research and take pics before taking something apart. Pays off every time
-
+Tip: always read the manual and take pics before taking something apart.
 
 
 ![placeholder](/public/aprilia_air_tubes/final.jpg "final")

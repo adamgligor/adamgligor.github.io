@@ -12,7 +12,7 @@ I'm confused about teamcity Vcs labeling feature ...
 [TeamCity](https://www.jetbrains.com/teamcity/) has a [VCS Labeling](https://confluence.jetbrains.com/display/TCD18/VCS+Labeling) build feature. This is commonly used to apply version number to the changeset used for the build. 
 
 
-I strougled a bit using this feature and found the original documentation fuzzy in some regards, here's what I learned.
+I struggled a bit using this feature and found the original documentation fuzzy in some regards, here's what I learned.
 
 
 These observations apply to TeamCity version 2017, and git source control.

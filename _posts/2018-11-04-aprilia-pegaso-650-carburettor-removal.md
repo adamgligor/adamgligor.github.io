@@ -10,16 +10,16 @@ The 36 steps to remove the carburetor from an aprilia pegaso 650 (cube, model '9
 
 ## Intro 
 
-My '97 model Aprilia Pegaso 650. With the warm season coming to an end, it is time for some maintenance work, i'll start with removing and cleaning the carburetor. 
+My '97 model Aprilia Pegaso 650. With the summer season coming to an end, it is time for some maintenance work, i'd like to remove and clean the carburetor. 
 
-I am by no means a professional mechanic but I like machines and occasional challenges. 
+I am by no means an expert mechanic but I like tinkering with machines. 
 
 To perform this operation I followed the procedure as described in the service manual.
 
 This will be my first attempt at this.
 
 
-The motorcycle in one piece. A real dinosaur, no fuel injection, no fuel pump, no computers, just gravity and world war 2 technology
+The motorcycle in one piece. A relic from the past decade, no fuel injection, no fuel pump, no computers, just gravity and world war 2 technology .. love it !
 
 ![placeholder](/public/aprilia_carb_removal/start.jpg "start")
 
@@ -27,7 +27,7 @@ The motorcycle in one piece. A real dinosaur, no fuel injection, no fuel pump, n
 
 Outline 
 
-The bad news is that the carbs are well hidden, to get to them I have to remove the fuel tank and the exhausts, and a whole bunch of other screws.
+The carbs are well hidden, to get to them I have to remove the fuel tank and the exhausts, and a whole bunch of other screws.
 
 Tools that are needed: no 4,5 allen wrench, no 10 wrench or socket key, long screwdrivers
 
@@ -126,8 +126,6 @@ Finally the carbs taken out, two `Mikuni bst-33` CV carburettors.
 
 It took me about 3 hours to take everything off, probably second time I can do it much faster.
 
-It really takes 36 steps to get the carb out, which is kind of a bummer I expected much easier access. 
-
 The parts that require extra attention
 
  - To not damage the 20 years old rubber manifolds that hold the carburetor. 
@@ -137,4 +135,4 @@ The parts that require extra attention
 This was a satisfying saturday afternoon work, I deserve a beer now.
 
 
-Optimization The no. `4. Remove the fuel tank suport plate` is not mandatory, there is space to remove the carbs even with these attached.
+Optimization The no. `4. Remove the fuel tank support plate` is not mandatory, there is space to remove the carbs even with these attached.

@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Book summary - The subtle art of not giving a fuck
+title: Book notes - The subtle art of not giving a fuck
 description: 
 date: '2020-09-27'
 tags: books
 ---
 
 
-Problems are a constant in life. Problems never stop; they merely get exchanged and/or upgraded. Choose the problems you're willing to suffer for 
-and happiness will com from solving them.
+Problems are a constant in life. Problems never stop; they merely get exchanged and/or upgraded. Choose the problems you're willing to suffer for and happiness will com from solving them.
 
 
 ## Summary

@@ -6,7 +6,7 @@ tags: programming
 ---
 
 
-Geting started with OData 4 services ? I switched to a new project in the beginning of this year so I had to pick up a bit of odata knowledge. I'll cover the basics in the following articles. 
+I'm learning OData 4 services for a new project. I'll cover the basics in the following articles. 
 
 ## What is odata
 

@@ -12,7 +12,7 @@ DIY 3d printed hair clipper attachment.
 
 A hobby grade 3d printer can be useful around the house specially if you're into DIY stuff.
 
-Saturday ... I needed a haircut, I could go to the hair dresser and be done with it, but I am lasy. I have hair clipper and I could cut it myself faster but it does not have a large enough attachment. I could order a propper hair cliper but then why make it easy. I have a 3d printer so i'm going to build the attachment myself. 
+Saturday ... I need a haircut, I could go to the hair dresser or try something new. I have hair clipper but it does not have a large enough attachment. I'm going to build a new attachment myself and 3d print it. 
 
 
 **The plan** 

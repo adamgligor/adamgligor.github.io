@@ -5,11 +5,11 @@ date: '2016-09-13'
 tags: programming
 ---
 
-There is a limitation in the XML Schema Definition Tool (xsd.exe) that causes the proxy classes to be generated incorrectly for certain cases of "unbounded" elements.
+In .net tooling there is a limitation in the XML Schema Definition Tool (xsd.exe) that causes the proxy classes to be generated incorrectly for certain cases of "unbounded" elements.
 
 ## The problem
 
-I encountered this issue last week while working on a project that consumes a third party soap service.  
+I encountered this issue while working on a project that consumes a third party soap service.  
 
 To consume soap services in c# client the common practice is to rely on framework tooling to generate service proxy classes (also known as "add service reference" from Visual Studio). Just point the XML Schema Definition Tool (xsd.exe) that is responsible for the proxy generation and the proxy will be created automatically. Once the proxy is there, it can be updated to get access to new methods and types, update is also an automated operation.
 

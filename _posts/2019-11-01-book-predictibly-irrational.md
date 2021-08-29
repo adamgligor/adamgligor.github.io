@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Book review - Predictably irrational
+title: Book notes - Predictably irrational
 description: 
 date: '2019-11-01'
 tags: books

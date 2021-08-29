@@ -10,7 +10,7 @@ A CI pipeline for Azure hosted .Net Core apps using Travis CI ...
 
 ## Intro
 
-I recently set up a CI piepline using Travis CI for a personal project written in .net core. The process was frictionless and I'm sure that anyone can figure this out as I did, but still felt like droping a few lines here. 
+I've set up a CI piepline using Travis CI for a personal project written in .net core. The process was frictionless and I'm sure that anyone can figure this out as I did, but still felt like droping a few lines here. 
 
 Tools evolve at a fast pace, the things listed here were valid in december 2017, if you are reading long after please better head to the official documentation provided with for the tools. Travis CI docs are [here](https://docs.travis-ci.com/)
 

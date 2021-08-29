@@ -6,7 +6,7 @@ date: '2019-11-15'
 tags: programming
 ---
 
-Here's how I put together a complex query in sqlalchemy using subqueries
+Here's how I put together a complex query in sqlalchemy using subqueries.
 
 ## Approach
 
@@ -153,7 +153,7 @@ FROM
 
 ```
 
-This problem can be solved in more than one way and this not necessary the best way, but it's complex enough to serve as reference for the syntax.
+This problem can be solved in more than one way and this not necessary the best way, but it's complex enough to serve as an example for the syntax.
 
 
 ## Resources

@@ -10,7 +10,7 @@ A development environment using docker ...
 
 ## Goal
 
-I have a python project consisting of some scripts interacting with websites or apis and a database. I want to create a development environment using docker where i'm able to run multiple versions of python hassle free and have my data locally so nobody messes with it while I develop and test and have a functional the debugger
+I have a python project consisting of some scripts interacting with websites or apis and a database. I want to create a development environment using docker where i'm able to run multiple versions of python hassle free and have my data locally and debugger support.
 
 ## Prerequisites
 

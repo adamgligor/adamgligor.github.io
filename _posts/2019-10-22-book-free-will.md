@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Book review - Free will
+title: Book notes - Free will
 description: 
 date: '2019-10-22'
 tags: books

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Book review - Meditations
+title: Book notes - Meditations
 description: 
 date: '2020-01-02'
 tags: books

@@ -6,7 +6,7 @@ date: '2018-11-07'
 tags: programming
 ---
 
-How to export huge amounts of data from a data source like a database into flat files efficiently. 
+.Net coding challenge, how to export huge amounts of data from a data source like a database into flat files efficiently. 
 
 ## Solution
 
