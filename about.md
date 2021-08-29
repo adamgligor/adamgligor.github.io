@@ -7,9 +7,6 @@ title: About me
   Hey there! My name is Adam Gligor and you've found my website !
 </p>
 
-
-You can find information about me on this website. 
-
 I write here about professional and personal things when I'm in the mood, i don't use social media.
 
 My resume and contact information is available [here](/public/2021/08/2021_08_29_cv_resume.pdf)
