@@ -5,7 +5,9 @@ date: '2016-06-05'
 tags: programming
 ---
 
-Curious about ruby ? Here are some resources
+I only know only a few languages o far so one of these days I got curious about ruby and decided to read a book and learn the basics.
+
+Here are some resources.
 
 ## Learning ruby - the language
 
