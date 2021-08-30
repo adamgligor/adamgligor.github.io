@@ -38,7 +38,6 @@ def test_integrations():
 if __name__ == "__main__":
     # the main entry point, a web app or whatever
     pass
-
 ```
 
 Docker
@@ -76,14 +75,11 @@ services:
     environment:
         POSTGRES_USER: dbuser
         POSTGRES_PASSWORD: dbpass
-
 ```
 
 Usage. Locally and on CI
 
-
 ```
-
 # spin up the database (optionally)
 
 docker-compose up db 
@@ -99,6 +95,4 @@ docker-compose run app pytest .
 # run mypy 
 
 docker-compose run app mypy .
-
 ```
-
