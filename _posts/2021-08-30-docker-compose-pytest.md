@@ -25,7 +25,7 @@ If one does not want to mess with the CI server this approach provides a good is
 
 Source code
 
-```
+```python
 # test_integrations.py 
 
 def test_integrations():
@@ -43,7 +43,7 @@ if __name__ == "__main__":
 
 Docker
 
-```
+```bash
 # Dockerfile
 
 FROM python:3.8.8
@@ -59,7 +59,7 @@ COPY *.py /usr/src/app/
 CMD [ "python" "app.py" ]
 ```
 
-```
+```bash
 # docker-compose.yml
 
 version: '2'
