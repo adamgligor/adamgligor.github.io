@@ -96,4 +96,4 @@ docker-compose run app pytest .
 docker-compose run app mypy .
 ```
 
-`docker-compose run` will spin up the dependencies and replace any run commands with the supplied argument then spin up a new container.
+`docker-compose run` will spin up the dependencies and replace any run commands with the supplied argument then start a new container.
