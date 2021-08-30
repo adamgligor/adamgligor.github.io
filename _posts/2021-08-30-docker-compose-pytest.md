@@ -68,7 +68,7 @@ services:
     environment:
         POSTGRES_URL: postgresql://dbuser:dbpass@db:5432/postgres
     links:
-      - postgres
+      - db
 
   db:
     image: postgres:latest
