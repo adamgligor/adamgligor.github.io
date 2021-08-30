@@ -22,7 +22,6 @@ If one does not want to mess with the CI server this approach provides a good is
 
 `docker-compose run ...` can help accomplish this.
 
-
 Source code
 
 ```python
@@ -96,3 +95,5 @@ docker-compose run app pytest .
 
 docker-compose run app mypy .
 ```
+
+`docker-compose run` will spin up the dependencies and replace any run commands with the supplied argument then spin up a new container.
