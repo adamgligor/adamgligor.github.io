@@ -27,7 +27,7 @@ For the fabric I decided on synthetic leather with self adhesive already on it, 
 
 Achieving millimeter scale tolerances without any tools was not that trivial. First the old fabric was bent so transferring the measurements required the use a cardboard template. Aligning the sticky new fabric with the plastic piece and the foam was hassle since the shape is all curvy and the fabric needs to be stretched and bent around the corners. 
 
-Eventually with a bit of patience I got it done. Now it looks almost as good as when it came out of the factory.
+Eventually with a bit of patience I managed to put it nicely back together and it came out better than expected.
 
 
 
