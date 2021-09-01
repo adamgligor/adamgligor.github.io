@@ -84,4 +84,4 @@ The execution plan for this query looks as follows
     3.Index Scan using pk_roles on public.roles as roles (...)
       Index Cond: (roles.id = ANY (u.role_ids))
 ```
-thus requiring two index seeks to fulfill.
+It requires two index seeks to fulfill.
