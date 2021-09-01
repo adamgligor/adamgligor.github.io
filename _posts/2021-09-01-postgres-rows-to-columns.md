@@ -51,6 +51,7 @@ Postgres supports array type columns and related sub-queries in the select state
 The db model.
 ```
 CREATE TABLE public.users (id integer, name character varying, role_ids integer[], CONSTRAINT pk_users PRIMARY KEY (id))
+
 CREATE TABLE public.roles (id integer, name character varying, CONSTRAINT pk_roles PRIMARY KEY (id))
 ```
 fill some test data in. 
