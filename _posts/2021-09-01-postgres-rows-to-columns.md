@@ -45,7 +45,7 @@ which needs one further aggregation to get one row per user.
 
 ## Option 2
 
-Postgres supports array type columns and related sub-queries in the select statement, so this is also possible. 
+Postgres supports array type columns and related sub-queries in the select clause, so this is also possible. 
 
 
 The db model.
