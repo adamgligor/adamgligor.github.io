@@ -23,16 +23,16 @@ Input:
   - two users John and Mary. John is reader and Mary is reader and writer.
 
 Output: 
-  - John, reader
-  - Mary, reader, writer
+  - (row1 )John, reader
+  - (row2) Mary, reader, writer
 
 ## Option 1 
 
 First the obvious, using many to many relationship. Ths involves setting up three tables 
 ```
-CREATE TABLE public.users( id integer, name character varying)
-CREATE TABLE public.roles ( id integer, name character varying)
-CREATE TABLE public.user_roles ( user_id integer, role_id integer)
+CREATE TABLE public.users (id integer, name character varying)
+CREATE TABLE public.roles (id integer, name character varying)
+CREATE TABLE public.user_roles (user_id integer, role_id integer)
 ```
 and the query 
 ```
