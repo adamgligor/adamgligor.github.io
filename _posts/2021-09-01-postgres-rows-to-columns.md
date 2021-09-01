@@ -19,12 +19,12 @@ How can this be modeled in postgres then queried to produce a list of users and 
 Example. 
 
 Input: 
-    - two roles reader and writer
-    - two users John and Mary. John is reader and Mary is reader and writer.
+  - two roles reader and writer
+  - two users John and Mary. John is reader and Mary is reader and writer.
 
 Output: 
-    - John, reader
-    - Mary, reader, writer
+  - John, reader
+  - Mary, reader, writer
 
 ## Option 1 
 
@@ -58,8 +58,7 @@ fill some test data in.
 INSERT INTO roles (id, name) SELECT generate_series(1,5000), 'role' || md5(random()::text)
 
 INSERT INTO users (id, name, role_ids) 
-SELECT *, 'role' || md5(random()::text), ARRAY[floor(1+ random() * 1000), floor(1+ random() * 1000)] 
-FROM generate_series(1,5000)
+SELECT *, 'role' || md5(random()::text), ARRAY[floor(1+ random() * 1000), floor(1+ random() * 1000)]  FROM generate_series(1,5000)
 ```
 Then the query making use of a sub-query in the select clause.
 ```
@@ -78,10 +77,10 @@ which returns role_names as a concatenated string.
 
 The execution plan for this query looks as follows
 ```
-1.	Index Scan using pk_users on public.users as u (...)
-    Index Cond: (u.id = ANY ('{1,10,100,1000}'::integer[]))
-    2.	Result (...)
-        3.	Index Scan using pk_roles on public.roles as roles (...)
-            Index Cond: (roles.id = ANY (u.role_ids))
+1.Index Scan using pk_users on public.users as u (...)
+  Index Cond: (u.id = ANY ('{1,10,100,1000}'::integer[]))
+  2.Result (...)
+    3.Index Scan using pk_roles on public.roles as roles (...)
+      Index Cond: (roles.id = ANY (u.role_ids))
 ```
-thus requiring two index seeks to accomplis.
+thus requiring two index seeks to fulfill.
