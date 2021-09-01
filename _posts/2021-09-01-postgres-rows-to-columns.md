@@ -61,7 +61,7 @@ INSERT INTO roles (id, name) SELECT generate_series(1,5000), 'role' || md5(rando
 INSERT INTO users (id, name, role_ids) 
 SELECT *, 'role' || md5(random()::text), ARRAY[floor(1+ random() * 1000), floor(1+ random() * 1000)]  FROM generate_series(1,5000)
 ```
-Then the query making use of a sub-query in the select clause.
+Then the query making use of a sub-query in the select clause. This time the result is already in the expected format, each user is one row and the roles names are also included.
 ```
     SELECT
     *, (SELECT ARRAY(SELECT name FROM roles WHERE id = ANY(u.role_ids))) AS "role_names"
