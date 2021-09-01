@@ -23,7 +23,7 @@ Input:
   - two users John and Mary. John is reader and Mary is reader and writer.
 
 Output: 
-  - (row1 )John, reader
+  - (row1) John, reader
   - (row2) Mary, reader, writer
 
 ## Option 1 
