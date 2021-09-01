@@ -41,7 +41,7 @@ and the query
     JOIN user_roles ON user.id = user_role.user_id
     JOIN roles ON role.id = user_role.role_id
 ```
-which needs further aggregated to get the unique users.
+which needs one further aggregation to get one row per user.
 
 ## Option 2
 
