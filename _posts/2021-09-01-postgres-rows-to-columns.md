@@ -18,13 +18,16 @@ How can this be modeled in postgres then queried to produce a list of users and 
 
 Example. 
 
-Input: 
-  - two roles reader and writer
-  - two users John and Mary. John is reader and Mary is reader and writer.
+*Input*
+  - roles: reader and writer
+  - users: John and Mary. John is reader and Mary is reader and writer.
 
-Output: 
-  - (row1) John, reader
-  - (row2) Mary, reader, writer
+*Output*
+
+| name | roles          |
+|------|----------------|
+| John | reader         |
+| Mary | reader, writer |
 
 ## Option 1 
 
@@ -36,10 +39,10 @@ CREATE TABLE public.user_roles (user_id integer, role_id integer)
 ```
 and the query 
 ```
-    SELECT * 
-    FROM users 
-    JOIN user_roles ON user.id = user_role.user_id
-    JOIN roles ON role.id = user_role.role_id
+SELECT * 
+FROM users 
+JOIN user_roles ON user.id = user_role.user_id
+JOIN roles ON role.id = user_role.role_id
 ```
 which needs one further aggregation to get one row per user.
 
@@ -63,15 +66,15 @@ SELECT *, 'role' || md5(random()::text), ARRAY[floor(1+ random() * 1000), floor(
 ```
 Then the query making use of a sub-query in the select clause. This time the result is already in the expected format, each user is one row and the roles names are also included.
 ```
-    SELECT
-    *, (SELECT ARRAY(SELECT name FROM roles WHERE id = ANY(u.role_ids))) AS "role_names"
-    FROM users AS u WHERE id IN (1,10,100,1000)
+SELECT
+*, (SELECT ARRAY(SELECT name FROM roles WHERE id = ANY(u.role_ids))) AS "role_names"
+FROM users AS u WHERE id IN (1,10,100,1000)
 ```
 which returns role_names as array *-or-*
 ```
-    SELECT
-    *, (SELECT string_agg(name, ',') FROM roles WHERE id = ANY(u.role_ids)) as "role_names"
-    FROM users AS u WHERE id IN (1,10,100,1000)
+SELECT
+*, (SELECT string_agg(name, ',') FROM roles WHERE id = ANY(u.role_ids)) as "role_names"
+FROM users AS u WHERE id IN (1,10,100,1000)
 ```
 which returns role_names as a concatenated string.
 
@@ -84,4 +87,4 @@ The execution plan for this query looks as follows
     3.Index Scan using pk_roles on public.roles as roles (...)
       Index Cond: (roles.id = ANY (u.role_ids))
 ```
-It requires two index scans to fulfill.
+And it requires two index scans to fulfill.
