@@ -31,7 +31,7 @@ Example.
 
 ## Option 1 
 
-First the obvious, using many to many relationship. Ths involves setting up three tables 
+First the obvious, using many to many relationship. This involves setting up three tables 
 ```
 CREATE TABLE public.users (id integer, name character varying)
 CREATE TABLE public.roles (id integer, name character varying)
