@@ -24,10 +24,10 @@ Example.
 
 *Output*
 
-| name | roles          |
-|------|----------------|
-| John | reader         |
-| Mary | reader, writer |
+| row | name | roles          |
+|-----|------|----------------|
+| 1   | John | reader         |
+| 2   | Mary | reader, writer |
 
 ## Option 1 
 
