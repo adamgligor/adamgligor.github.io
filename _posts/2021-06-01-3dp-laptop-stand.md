@@ -20,6 +20,7 @@ Source code on thingiverse [here](https://www.thingiverse.com/thing:4827958)
 
 ## Things I learned 
 
+New things I learned to do in openscad.
 
 1) padding using offset.
 
