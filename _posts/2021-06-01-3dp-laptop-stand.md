@@ -11,6 +11,9 @@ A a customizable laptop stand for 3d printing.
 
 ## The stand 
 
+Design criteria. Mechanically sound, no screws, glue, moving parts and can hold heavy laptops. Easy to assemble and disassembled for transport.
+
+
 ![placeholder](/public/2021/06/2021-06-01-3dp-stand.png "stand")
 
 Source code on thingiverse [here](https://www.thingiverse.com/thing:4827958)
