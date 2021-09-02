@@ -20,7 +20,7 @@ Source code on thingiverse [here](https://www.thingiverse.com/thing:4827958)
 
 ## Things I learned 
 
-New things I learned to do in openscad.
+How to do rounding easily is a common theme in openscad. I picked up a few new tricks.
 
 1) padding using offset.
 
