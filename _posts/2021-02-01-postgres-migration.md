@@ -11,7 +11,7 @@ Notes on an database migration ...
 ## Scenario
 
 
-A postgres database serving various applications. Additionally the data is accessed remotely (read only) for analytics purposes using the foreign data wrapper module. Everything is hosted in AWS and the database is of managed type. 
+A postgres database serving various applications. Additionally the data is accessed remotely (read only) for analytics purpose using the foreign data wrapper module. Everything is hosted in AWS and the database is of managed type. 
 
 The database server has to be upgraded to a newer version; the two consumers have to be better isolated by providing a separate copy of the data to each. The migration should ideally be done with with little or no downtime.
 
@@ -25,22 +25,24 @@ On the right side the desired outcome.
 ![placeholder](/public/2021/02/2021-02-01-db-migration1.png "migration1")
 
 
-Postgres has good native tools to copy backup and restore data and good replication support but for this the AWS Database Migration Service was used. This is a managed service that can do one time copy and or ongoing replication between a source and target and supports many of the common database systems. 
+Postgres has good native tools to copy backup and restore data and good replication support but for this the AWS Database Migration Service was used. 
+
+This is a managed service that can do one time copy and or ongoing replication between a source and target and supports many of the common database systems. 
 
 The steps of the migration.
 
-1) Spin up a new database with latest postgres engine.
-2) Set up a temporary dms replication from the existing to the new app database.
-3) Set up a permanent dms replication from the new app database to the bi database.
-4) Once the data transfer is ready switch the applications to the new database.
-5) Shut down the old database and temporary replication.
+1. Spin up a new database with latest postgres engine.
+2. Set up a temporary dms replication from the existing to the new app database.
+3. Set up a permanent dms replication from the new app database to the bi database.
+4. Once the data transfer is ready switch the applications to the new database.
+5. Shut down the old database and temporary replication.
 
 
 *Pic 2. Migration visualized*
 
-On the left side adding a new database and replication using DMS. 
+On the left side the new system components. 
 
-On the right side redirecting apps to the new database and spinning down the old database and the temporary DMS.
+On the right side the switch to the new database.
 
 ![placeholder](/public/2021/02/2021-02-01-db-migration2.png "migration2")
 
