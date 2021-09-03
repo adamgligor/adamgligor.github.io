@@ -42,7 +42,7 @@ The steps of the migration.
 
 On the left side the new system components. 
 
-On the right side the switch to the new database.
+On the right side switching to the new database.
 
 ![placeholder](/public/2021/02/2021-02-01-db-migration2.png "migration2")
 
