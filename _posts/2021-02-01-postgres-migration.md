@@ -20,7 +20,7 @@ The database server has to be upgraded to a newer version; the two consumers hav
 
 On the left side the starting setup. 
 
-On the right side the outcome after the migration.
+On the right side the desired outcome.
 
 ![placeholder](/public/2021/02/2021-02-01-db-migration1.png "migration1")
 
