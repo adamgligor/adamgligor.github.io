@@ -46,7 +46,7 @@ On the right side switching to the new database.
 
 ![placeholder](/public/2021/02/2021-02-01-db-migration2.png "migration2")
 
-The DMS has a great deal of flexibility but also many limitation since it tries to be generic and cover many common use cases. Data types might not be fully supported like specialized data types used by the postgis geo spatial extension, binary data can be problematic or slow to transfer and there's a lot of fiddling involved in the initial setup. 
+The DMS has a great deal of flexibility but since it tries to be generic and cover many common use cases has many limitation. Data types might not be fully supported like specialized data types used by the postgis geo spatial extension, binary data can be problematic or slow to transfer and there's a lot of fiddling involved in the initial setup. 
 
 Despite all this it's a great tool that can help achieve zero downtime migrations.
 
