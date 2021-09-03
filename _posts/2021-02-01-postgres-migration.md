@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Notes on a database database
+title: Notes on a database migration
 description: 
 date: '2021-02-01'
 tags: programming
