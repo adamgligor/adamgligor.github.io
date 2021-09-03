@@ -48,7 +48,7 @@ which needs one further aggregation to get one row per user.
 
 ## Option 2
 
-Postgres supports array type columns and related sub-queries in the select clause, so this is also possible. 
+Postgres supports array type and related sub-queries in the select clause, so is also possible to store the roles in an array column.
 
 
 The db model.
