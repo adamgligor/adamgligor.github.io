@@ -11,9 +11,9 @@ Notes on an database migration ...
 ## Scenario
 
 
-A postgres database serving various applications. Additionally the data is accessed remotely for analytics purposes using the foreign data wrapper module. Everything is hosted in AWS and the database is of managed type. 
+A postgres database serving various applications. Additionally the data is accessed remotely (read only) for analytics purposes using the foreign data wrapper module. Everything is hosted in AWS and the database is of managed type. 
 
-The database server needs to be upgraded to a newer version two clients should be isolated by providing each a separate copy of the data. The migration should ideally be done with with little or no downtime.
+The database server needs to be upgraded to a newer version two consumers should be isolated by providing each a separate copy of the data. The migration should ideally be done with with little or no downtime.
 
  
 *Pic 1. The setup*
