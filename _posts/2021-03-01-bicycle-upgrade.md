@@ -45,7 +45,7 @@ I managed to put everything back together in a weekend, then spent a few more da
 
 ```
 module arc(radius, angles, width = 1, fn = 24) {
-    // todo ...
+    // available to download
 } 
 
 module support() {
