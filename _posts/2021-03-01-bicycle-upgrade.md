@@ -52,7 +52,7 @@ module support() {
 
     DIA = 41; // the bicycle frame tube
     THK = 3; // the thickness of the piece 
-    LEN = 34; // 37 the length of the piece
+    LEN = 34; // the length of the piece
     WDT = 10; 
     
     difference() {  
