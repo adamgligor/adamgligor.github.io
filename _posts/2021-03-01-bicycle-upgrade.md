@@ -29,7 +29,7 @@ The shifter needs to be bottom swing and have clamp mount, the front deraileur n
 Now onto the challenging part. In order to install the front mech the frame needs to have the appropriate cable mounts, and while most frames will have everything needed this one does not. The cable is supposed be routed below to bottom bracket same way as the rear shifter but then the cable stopper is missing. This is a part that's welded on the frame and instead of having two, this frame has only one. 
 
 
-I decided to make the mount with the 3d printer. First I tried a few crew-less designs but didn't work well. Eventually I gave up and just drilled holes in the frame and used screws, this provides the best mechanical support.
+I decided to make the mount with the 3d printer. First I tried a few crew-less designs but didn't work well. Eventually I gave up and just drilled holes in the frame and used screws as this provides the best mechanical support.
 
 
 I managed to put everything back together in a weekend, then spent a few more days trying out various mounts for the cable stopper, but eventually everything worked out ! I spent about 50 euro on all the parts.
