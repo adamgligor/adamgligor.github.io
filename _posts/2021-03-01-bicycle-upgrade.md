@@ -8,6 +8,8 @@ tags: diy
 
 Upgrading a bicycle ...
 
+## The bike
+
 A b-twin riverside 120, a cheap 8 speed bicycle from decathlon. I wanted to upgrade it with a front shifter to have 3x8 speeds on it.
 
 After I bit of research I figured that I'll go with as 24-34-42 chain ring instead of the original single 36 chain ring and I found that the manufacturer of most of the mech on the bicycle it's `microshift` and it's just re-branded by decathlon as b'twin.
