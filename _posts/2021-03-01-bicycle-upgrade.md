@@ -24,6 +24,7 @@ The shopping list.
 The shifter and deraileur can be bought conveniently from decathlon, the crank is the cheapest that shimano sells.
 The shifter needs to be bottom swing and have clamp mount, the front deraileur needs to be for the appropriate crank size and be compatible with shimano 3x8 shifters, the crank needs to have square hole mount.
 
+## The challenge 
 
 Now onto the challenging part. In order to install the front mech the frame needs to have the appropriate cable mounts, and while most frames will have everything needed this one does not. The cable is supposed be routed below to bottom bracket same way as the rear shifter but then the cable stopper is missing. This is a bit that's welded on the frame and instead of having two, this frame has only one. 
 
