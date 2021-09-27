@@ -15,7 +15,7 @@ Notes from the book `What doesn't kill us` by Scott Carney.
 
 The book is a journalist investigation into Vim Hof and his method. Vim Hof is an extreme athlete mostly known for his work related cold exposure.
 
-Ok so i've seen documentaries about Vim Hof and his achievements are pretty impressive. The book seemed a legit source of information into the phenomenon so I read it. It's a pleasant read, a mix of facts, story about the guy and the author's personal journey. These are the main ideas.
+Ok so i've seen documentaries about Vim Hof and his achievements are pretty impressive. I choose this book because it seemed a legit source of information into the phenomenon. It's a pleasant read, a mix of facts, story about the guy and the author's personal journey. These are the main ideas.
 
 
 The Wim Hof method consists of forced breathing exercises, exposure to cold with cold showers or ice baths and meditation.
