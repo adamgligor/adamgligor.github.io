@@ -15,7 +15,7 @@ Notes from the book `What doesn't kill us` by Scott Carney.
 
 The book is a journalist investigation into Vim Hof and his method. Vim Hof is an extreme athlete mostly known for his work related cold exposure.
 
-Ok so i've seen documentaries about Vim Hof and his achievements are pretty impressive. The book seemed legit as a source of insight into the phenomenon so I read it. It's a pleasant read, a mix of facts, story about the guy and the author's personal journey. These are the main ideas.
+Ok so i've seen documentaries about Vim Hof and his achievements are pretty impressive. The book seemed a legit source of information into the phenomenon so I read it. It's a pleasant read, a mix of facts, story about the guy and the author's personal journey. These are the main ideas.
 
 
 The Wim Hof method consists of forced breathing exercises, exposure to cold with cold showers or ice baths and meditation.
@@ -25,7 +25,7 @@ Exposure to cold (or some form of physical hardships) can have positive effects.
 It might ameliorate autoimmune diseases, there's plenty of people reporting this, a hypothetical explanation being that the body and immune system needs to be kept busy with something like be put off balance otherwise it will turn against itself. Living in the comfort of our homes at room temperature all the time does not help with this.
 
 
-Cold might also help with wight balance, a less known type of fat - brown fat - is particularly efficient at converting energy into heat like a radiator and while we don't have much of it it might be possible to create more by repeated exposure to cold.
+Cold might also help with weight balance, a less known type of fat - brown fat - is particularly efficient at converting energy into heat like a radiator and while we don't have much of it it might be possible to create more by repeated exposure to cold.
 
 
 Forced breathing is a bit like a body hack, it will help preventing altitude sickness and there's even medication that works on the same principle of speeding up the frequency of the breathing reflex and its used for climbing at higher altitudes without prior acclimatization.
