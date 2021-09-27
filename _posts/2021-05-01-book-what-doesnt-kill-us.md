@@ -10,7 +10,8 @@ Notes from the book `What doesn't kill us` by Scott Carney.
 
 ## Notes
 
-![placeholder](/public/2021/05/01/2021-05-01-kill-us.jpg "cover")
+![placeholder](/public/2021/05/2021-05-01-kill-us.jpg "cover")
+
 
 The book is a journalist investigation into Vim Hof and his method. Vim Hof is an extreme athlete mostly known for his work related cold exposure.
 
