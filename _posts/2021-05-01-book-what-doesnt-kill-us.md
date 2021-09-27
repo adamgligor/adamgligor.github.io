@@ -18,7 +18,7 @@ The book is a journalist investigation into Vim Hof and his method. Vim Hof is a
 Ok so i've seen documentaries about Vim Hof and his achievements are pretty impressive. I choose this book because it seemed a legit source of information into the phenomenon. It's a pleasant read, a mix of facts, story about the guy and the author's personal journey. These are the main ideas.
 
 
-The Wim Hof method consists of forced breathing exercises, exposure to cold with cold showers or ice baths and meditation.
+The Wim Hof method consists of forced breathing exercises, exposure to cold, cold showers or ice baths and meditation.
 
 Exposure to cold (or some form of physical hardships) can have positive effects. 
 
