@@ -12,13 +12,13 @@ Setting up TSL for self hosted hobby websites.
 
 ## Scenario 
 
-I have a photo gallery web app that is for my personal use only. It doesn't need to run 24/7 and I'd like to be able to access it from the internet ocasionally. I'd like to hosted on my pc which is behind a router.
+I have a photo gallery web app that is for my personal use only. It doesn't need to run 24/7 and I'd like to be able to access it from the internet ocasionally. I'm fine with hosting it on my pc provided that it's a bit isolated from my os and my pc is behind a router.
 
 
-This is what the setup looks like: The gallery app will runs in a docker container with nginx as a reverse proxy in front of it; nginx and also handles the https encryption. A dynamic dns service will assign a permanent domain name to the public ip address that is likely dynamic.
+This is what I came up with: the gallery app will run in a docker container with nginx as a reverse proxy in front of it; nginx and also handles the https encryption. A dynamic dns service will assign a permanent domain name to the public ip address that is likely dynamic.
 
 
-And it works as follows: Request comes in from the internet, hits the router, router redirects it to my pc where it's handled by docker. There it first goes through nginx which forwards it finally to the photo gallery app.
+And it works as follows: the request comes in from the internet, hits the router, router redirects it to my pc where it's handled by docker. There it goes through nginx first which forwards it to the photo gallery app where it's finally handled.
 
 ## The app 
 
@@ -28,7 +28,7 @@ Let's assume that the app is already setup to run in a docker container.
 
 There are two distinct paths when it comes to setting up TLS depending whether the domain is public or private.
 
-For public domains one popular method is to use `letsencrypt` and `certbot`, for private domains it's self signed certificates.
+For public domains one popular method is to use `letsencrypt` and `certbot`; for private domains it's self signed certificates.
 
 To generate a self signed certificate i use `openssl` (ubuntu)
 
@@ -38,7 +38,7 @@ sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout ~/nginx-selfsig
 
 ## Nginx
 
-Here's the Dockerfile for nginx.
+The next piece is to set up nginx. Here's the Dockerfile for it.
 
 ```
 FROM nginx:1.20-alpine
@@ -51,7 +51,7 @@ EXPOSE 8011
 The previously generated keys and the nginx config are copied to their designated places, the rest is stock.
 
 
-The next bit is the nginx config which looks like this:
+Next, the nginx config which looks like this:
 
 
 ```
@@ -92,12 +92,12 @@ http {
 } # end http
 ```
 
-Nginx is set up to run on port 80 with ssl, then the keys are referenced, finally the request will redirected to the gallery app at `http://myphotogalery:2342/`. Note that the `server_name` can be set to localhost, otherwise it has to be present in the hosts config.
+Nginx is set up to run on port 80 with ssl, then the keys are referenced, then the forwarding to the gallery app at `http://myphotogalery:2342/`. Note that the `server_name` can be set to localhost, otherwise if it's a different value it has to be present in the hosts config.
 
 
 ## Docker compose
 
-Next is setting up docker-compose to run the two (nginx and the gallery app)
+The docker-compose to run the two (nginx and the gallery app) looks lke this:
 
 ```
 version: '3.5'
@@ -119,7 +119,7 @@ services:
       - "8011:80"
 ```
 
-The `myphotogalery` is set to run on port 2342, nginx on port 80, but exposed as 8001 on the host os; additionally docker-compose will add `myphotogalery.local` to the hosts config in the nginx container.
+The `myphotogalery` is set to run on port 2342, nginx on port 80 but exposed as 8001 on the host os; additionally docker-compose will add `myphotogalery.local` to the hosts config in the nginx container.
 
 ## Post forwarding and dynamic dns
 
