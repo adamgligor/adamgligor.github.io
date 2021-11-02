@@ -128,7 +128,7 @@ My pc is behind a router so a port forwarding is required to instruct the router
 
 ## Conclusion
 
-All that's left is to `docker-compose up` to start it up then open `https://my-dyndns-domain.com:8011` in the browser.
+All that's left is to `docker-compose up` to start the app, then open `https://my-dyndns-domain.com:8011` in the browser.
 
 
 ## Links
