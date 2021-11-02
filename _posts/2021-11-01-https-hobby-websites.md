@@ -123,7 +123,7 @@ The `myphotogalery` is set to run on port 2342, nginx on port 80 but exposed as 
 
 ## Post forwarding and dynamic dns
 
-My pc is behind a router so a port forwarding is required to instruct the router to redirect any https calls on port 8011 from the internet to my computer in the local network. With this the web app is already accessible from the outside but only by ip address. Since that is likely to change a final improvement is assigning a permanent domain, a service called called dynamic dns service can be used for that like [dyndns](`http://dyndns.org/`). Some newer routers allow setting this up straight in the router configuration.
+My pc is behind a router so a port forwarding is required to instruct the router to redirect any https calls on port 8011 from the internet to my computer in the local network. With this the web app is already accessible from the outside but only by ip address. Since that is likely to change a final improvement is assigning a permanent domain, a service called dynamic dns service can be used for this, like [dyndns](`http://dyndns.org/`). Some newer routers allow setting this up straight in the router configuration.
 
 
 ## Conclusion
