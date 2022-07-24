@@ -19,7 +19,7 @@ Judging from the tile I expected this book to be just another leadership book bu
 
 It's foremost a book about the history of the military strategy called `Auftragstaktik` developed starting from the end on 19th century in the Prussian empire, perfected by the germans during ww2 and later adopted in the doctrine of Nato and other armies.   
 
-While many organizations struggle to various extend to make a large number of people work effectively towards a common goal, surprise ... the army already figured already a recipe for this two centuries ago.and since then tested, applied and refined it.
+While many organizations struggle to various extend to make a large number of people work effectively towards a common goal, surprise ... the army already figured already a recipe for this two centuries ago and since then tested, applied and refined it.
 
 War (same as the environment of the organizations) is a chaotic system, as such its future is not predictable. 
 
