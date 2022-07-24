@@ -9,7 +9,7 @@ tags: books
 
 A few words about the book: The Art of Action - How Leaders Close the Gaps between Plans, Actions and Results by Stephen Bungay
 
-![placeholder](/public/2022/07/book-the-art-of-action.jpg "cover")
+![placeholder](/public/2022/07/book-the-art-of-action.jpeg "cover")
 
 
 ## The book
