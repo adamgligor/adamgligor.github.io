@@ -1,67 +1,59 @@
 ---
 layout: post
-title: The Art of Action -  by Stephen Bungay
+title: The Art of Action - by Stephen Bungay
 description: 
 date: '2022-07-01'
 tags: books
-draft: true
 
 ---
 
-Here's a few words on this book. Its complete tile: The Art of Action: How Leaders Close the Gaps between Plans, Actions and Results 
+A few words about the book: The Art of Action - How Leaders Close the Gaps between Plans, Actions and Results by Stephen Bungay
 
 ![placeholder](/public/2022/book-the-art-of-action.jpg "cover")
 
 
-## The summary
+## The book
 
 
-Judging from the tile I expected this book to be yet another leadership book, but that was definitely not.
+Judging from the tile I expected this book to be just another leadership book but it was definitely not.
 
-It's a book about the history of the military strategy called `Auftragstaktik` developed starting from the end on 19th century in the prussian empire, perfected by the germans during ww2 and later the basis of nato and other army's doctrine.   
+It's foremost a book about the history of the military strategy called `Auftragstaktik` developed starting from the end on 19th century in the Prussian empire, perfected by the germans during ww2 and later adopted in the doctrine of Nato and other armies.   
 
-While many of todays companies struggle to organize a large number of people to work towards a common goal, surprise ... the army already figured this out, applied it and perfected its approach for the past two centuries. 
+While many organizations struggle to various extend to make a large number of people work effectively towards a common goal, surprise ... the army already figured already a recipe for this two centuries ago.and since then tested, applied and refined it.
 
-War (same as the environment of the organizations) is like chaotic systems as such its future is not predictable. 
+War (same as the environment of the organizations) is a chaotic system, as such its future is not predictable. 
 
 Essentially, military success requires smart decision-making from both the bottom and the top of the organization. Generals and commanders are responsible for understanding the bigger picture and creating effective overall strategies. Soldiers on the ground are responsible for responding quickly and effectively to an evolving battle situation. This balance of power allows the military to maximize strategy and flexibility. 
 
-Definitely not your average read, it's packed with information and requires intense focus to understand. So far this has been the most useful book i've read this year.
+The book is definitely not an average read, it's dense, packed with information and requires focus to comprehend.
 
 
-## Gaps and closing them
+## Teasers
+
+Some random quotes to give a teaser, a summary of my own wouldn't do it justice.
+
+>  WHAT HAS NOT BEEN MADE SIMPLE CANNOT BE MADE CLEAR AND WHAT IS NOT CLEAR WILL NOT GET DONE. 
+
+> There are numerous situations in which an officer must act on his own judgment. For an officer to wait for orders at times when none can be given would be quite absurd. But as a rule, it is when he acts in line with the will of his superior that he can most effectively play his part in the whole scheme of things ... not commanding more than is strictly necessary, nor planning beyond the circumstances you can foresee. In war, circumstances change very rapidly, and it is rare indeed for directions which cover a long period of time in a lot of detail to be fully carried out
 
 
-Between plans, actions and outcomes
-
-  - Knowledge gap - the difference between what we would like to know and what we do know
-  - Alignment gap - the difference between what we would like people to do and what they actually do
-  - Effects gap - the difference between what we hope to achieve and what we actually achieve
- 
-
-Understanding the context and the overall intention is what enables junior officers to take independent decisions if the specific orders issued to them become invalid because of a change in the situation.
+> In any case, a leader who believes that he can make a positive difference through continual personal interventions is usually deluding himself. He thereby takes over things other people are supposed to be doing, effectively dispensing with their efforts, and multiplies his own tasks to such an extent that he can no longer carry them all out. Te demands made on a senior commander are severe enough as it is. It is far more important that the person at the top retains a clear picture of the overall situation than whether some particular thing is done this way or that.
 
 
-On the knowledge gap, he emphasizes the need to plan only what can be planned, the need for judgment and timely decision making based on what one can ascertain, and the acceptance of
-uncertainty.
+> The higher the level of command, the shorter and more general the orders should be. Te next level down should add whatever further specification it feels to be necessary, and the details of execution are let to verbal instructions or perhaps a word of command. This ensures that every- one retains freedom of movement and decision within the bounds of their authority.
 
 
-On the alignment gap, he recommends a cascade process with each level adding something to the one above, but all united by an understanding of the intentions of the higher levels.
+> No plan of operations can extend with any degree of certainty beyond the first encounter with the enemy’s main body.1 Only a layman could imagine that in following the course of a campaign he is watching the logical unfolding of an initial idea conceived in advance, thought out in every detail and pursued through to its conclusion. Whatever the vicissitudes of events, a commander will need to keep his mind fixed unwaveringly on his main objectives, but he can never be certain beforehand which paths offer the best hopes of realizing them. Throughout the campaign he will find himself forced to make a whole series of decisions as situations arise which no one was able to predict.
 
 
-On the effects gap, he encourages the use of individual initiative within boundaries and actually requires junior people to depart from the letter of their instructions if the situation demands it in order to fulfill the intent. 
+> Orders were to be clear: logically arranged, short sentences, using universally understood expressions and railroad designations – 0700 for 7 a.m. and 1900 for 7 p.m. Orders were to be precise: subordinates were to be made acquainted with the intentions of their superior. Orders were to be complete – distinguishing the part that each unit was asked to perform. Orders were to be short. The rule was that they should never contain a single word by the omission of which their meaning would not be suddenly and completely affected
 
-## briefing
 
-TODO
+> On a man for man basis, the German ground soldier consistently inflicted casualties at about a 50% higher rate than they incurred from the opposing British and American troops under all circumstances. Tis was true when they were attacking and when they were defending, when they had a local numerical superiority and when, as was usually the case, they were outnumbered, when they had air superiority and when they did not, when they won and when they lost. 
 
-## References 
+## Links 
 
-  - book: Carl von Clausewitz Vom Kriege
+  - book: Vom Kriege - Carl von Clausewitz
   - book: Helmuth von Moltke and Aufragstaktik
-  - book: Helmuth Von Moltke - The theory of war
+  - book: The theory of war - Helmuth Von Moltke
   - book review on [goodreads](https://www.goodreads.com/book/show/9973202-the-art-of-action)
-
- about a 50% higher rate than they incurred from the opposing British and American troops under all circumstances. is was true when they were attacking and when they were defending,
-when they had a local numerical superiority and when, as was usually the case, they were outnumbered, when they had air superiority and when they did not, when they
-won and when they lost.
