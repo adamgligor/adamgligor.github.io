@@ -7,18 +7,18 @@ tags: android
 
 ---
 
-I appreciate having alternatives specially in areas where there is almost a monopoly as is with mobile phone operating systems. When I can, I do a tiny bit to support them.
+Mobile phone operating systems don't fare well when it comes to giving users freedom over their expensively bought devices but luckily there are still alternatives like [e/os](https://e.foundation/e-os/)
 
 
 I used [cyanogenmod](https://en.wikipedia.org/wiki/CyanogenMod) a popular custom android rom before it was discontinued many years ago. Since then I used the stock android on my phone since there was not much other option. 
 
-And 'till now I managed to live with one phone at time but the fear of what would happen if I would lose it given how central to our daily lives phones have become (think of two factor auth, bank account access etc) I decided to get a seconds backup device.
+And 'till now I managed to live with one phone at time but the fear of what would happen if I would lose it given how central to our daily lives phones have become (think of two factor auth, bank account access etc) I decided to get a second backup device.
 
 
 New, shiny and expensive is not my thing so a second hand samsung phone was just fine, and since I did not spend a ton of money on it I decided do try and swap the os with a more privacy conscious one; that's how I got acquainted to [e/os](https://e.foundation/e-os/)
 
 
-After using it for more than a half of year I can say i'm pleased with it. While not without its little issues it does offer a way out of the google web and still have an almost 100% functional phone, which is quire remarkable I would say.
+After using it for more than a half of year I can say i'm pleased with it. While not without its little issues it does offer a way out of the google web and still have an almost 100% functional phone, which is quite remarkable I would say.
 
 
 ## E/foundation and e/os
