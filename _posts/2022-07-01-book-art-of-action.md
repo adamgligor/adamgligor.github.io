@@ -4,7 +4,7 @@ title: The Art of Action - by Stephen Bungay
 description: 
 date: '2022-07-01'
 tags: books
-
+draft: true
 ---
 
 A few words about the book: The Art of Action - How Leaders Close the Gaps between Plans, Actions and Results by Stephen Bungay
