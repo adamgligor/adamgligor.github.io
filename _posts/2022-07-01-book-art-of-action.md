@@ -34,6 +34,12 @@ In 1977 US Army Colonel Trevor Dupuy said this about the german army in ww2 test
  - initiative and independence in a framework is expected and give
  - 
 
+-- 
+
+ - structure, hirarchical the officers
+ - mission briefing, comminication channel
+ - modus operandi: initiative and independence, no micro management
+ - academy: train the offices so that the oranization becomes more uniform and predictible
 
 ## Opportunism
 
