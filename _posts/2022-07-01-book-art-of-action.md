@@ -17,11 +17,11 @@ A few words about the book: The Art of Action - How Leaders Close the Gaps betwe
 
 Judging from the tile I expected this book to be another leadership book but it was definitely not.
 
-`Auftragstaktik` is a military strategy developed in the Prussian empire at the end of the 19th, perfected by the germans during ww2 and because of its success was later adopted by todays armies (including Nato).   
+`Auftragstaktik` is a military strategy developed in the Prussian empire at the end of the 19th century, perfected by the germans during ww2 and because of its success was adopted by many armies (including Nato).   
 
 War is a chaotic system, as such its future is not predictable beyond the first contact with the enemy, military success thus needs to incorporate the flexibility to deal with the evolving situation. How is that achieved ? 
 
-There is a hierarchy of course, but it has elements of flexibility, new groups can be created and dismantled to fulfill certain tasks as the situation dictates.
+The army has a top down hierarchical structure of course, but it has elements of flexibility, new groups can be created and dismantled as the situation dictates.
 
 The backbone of the organization is the offices corp. Generals and commanders are responsible for understanding the bigger picture and creating effective overall strategies. Soldiers on the ground are responsible for responding quickly and effectively to an evolving battle situation. 
 
@@ -29,7 +29,7 @@ The Academy is the fundamental instrument in building the organization. Its purp
 
 Independent action by subordinates as a matter of principle. Officers are encouraged to show initiative and seize opportunities as they arise.  
 
- Communication chain is important and orders must be passed down “to the last man.”. But since this chain can get disrupted people must remain in charge at all levels, processes should not dominate people. There is strictness and rigor associated with passing down information. Mission briefing must adhere to the highest standards. 
+ Communication chain is important and orders must be passed down “to the last man”. But since this chain can get disrupted people must remain in charge at all levels, processes should not dominate people. There is strictness and rigor associated with passing down information. Mission briefing must adhere to the highest standards. 
 
 *The mission briefing* is more like a guideline to empower subordinates to act, it's not a command to be carried out exactly as laid out. The information it must contain: an account of the situation, a short statement of the overall intent, an explanation of the more specific task, guidance about boundaries and unknown factors. In Nato jargon this is called mission command. 
 
