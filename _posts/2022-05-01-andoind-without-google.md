@@ -29,7 +29,7 @@ The company has its roots in europe (France I believe) and offers a google free 
 The os is open source, can be downloaded and installed on the more common android phones (ex the samsung s series). A list of supported devices is [here](https://doc.e.foundation/devices). Prerequisite for installing the os is unlocking a phone which requires a bit of tinkering but the process for every device is well documented.
 
 
-Eos comes with its own app store [here](https://e.foundation/e-os-available-applications/) and the google app store is gone from the phone so this is where apps are installed from. While the more common apps are in there it's definitely a subset of the apps in the google store. Os updates and security patches are published regularly. 
+Eos comes with its own app store [here](https://e.foundation/e-os-available-applications/) as the google app store is gone from the phone. While the more common apps are in there it's definitely a subset of the apps in the google store, but this too can be worked around using other 3rd party app stores. Os updates and security patches are published regularly. 
 
 To get more familiar with what it offers in terms of feature and privacy i recommend reading [this](https://doc.e.foundation/what-s-e#degoogling--ungoogling) page , and for the details of what `de-googled` means [this](https://e.foundation/wp-content/uploads/2020/09/e-state-of-degooglisation.pdf) page
 
